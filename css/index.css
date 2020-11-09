@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+@font-face {
+  font-family: "Le_Murmure-Regular";
+  src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.eot");
+}
+
+@font-face {
+  font-family: "Le_Murmure-Regular";
+  src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.woff");
+}
+
+* {
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body .intro.active {
+  z-index: 10;
+  opacity: 1;
+}
+
+body .intro {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  background-color: #000;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .intro div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .intro div p.result1 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+  font-size: 30px;
+  height: 24px;
+  line-height: 24px;
+  border-right: 1px solid #000;
+  padding-right: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 5px;
+}
+
+body .intro div p.cursor {
+  -webkit-animation: cursor 0.4s infinite;
+          animation: cursor 0.4s infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #000;
+  }
+  50% {
+    border-right: 1px solid #fff;
+  }
+  100% {
+    border-right: 1px solid #000;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #000;
+  }
+  50% {
+    border-right: 1px solid #fff;
+  }
+  100% {
+    border-right: 1px solid #000;
+  }
+}
+
+body .intro div p {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body .main.active {
+  opacity: 1;
+}
+
+body .main {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+body .main svg {
+  width: 100%;
+  height: 100%;
+}
+
+body .main text {
+  font-size: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Le_Murmure-Regular", sans-serif;
+  color: #555;
+}
+
+body .main .app-text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .main .imgList {
+  width: 100vw;
+  overflow: hidden;
+}
+
+body .main .imgList .move {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+body .main .imgList .move li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  width: 20%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+body .main .imgList .move li img {
+  width: 100%;
+  height: auto;
+}
+
+body .main .imgList .move li.active {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+body .main .imgList .move li:nth-of-type(1) {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+body .main .imgList .move li:nth-of-type(2) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+body .main .imgList .move li:nth-of-type(3) {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+body .main .imgList .move li:nth-of-type(4) {
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
+}
+
+body .main .imgList .move li:nth-of-type(5) {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+body .main .list {
+  position: absolute;
+  height: 700px;
+  width: 1500px;
+  left: 50%;
+  bottom: -50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .main .nav {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  width: 12%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .main .nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .main .nav ul li {
+  width: 15%;
+}
+
+body .main .nav ul li svg {
+  fill: #1f1f1f;
+}
+
+body .main .nav ul li:hover svg {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=index.css.map */

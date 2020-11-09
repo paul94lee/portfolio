@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+@font-face {
+    font-family: "Le_Murmure-Regular";
+    src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.eot");
+}
+@font-face {
+    font-family: "Le_Murmure-Regular";
+    src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.woff");
+}
+* {
+    list-style: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    // pointer-events: none;
+    -webkit-user-drag: none;
+    cursor: grab;
+}
+
+body {
+    .intro.active {
+        z-index: 10;
+        opacity: 1;
+    }
+    .intro {
+        transition: 0.5s;
+        opacity: 0;
+        background-color: #000;
+        z-index: -10;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            p.result1 {
+                transition: 0.5s;
+                display: inline-block;
+                font-size: 30px;
+                height: 24px;
+                line-height: 24px;
+                border-right: 1px solid #000;
+                padding-right: 2px;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 5px;
+                span {
+                    // display: inline-block;
+                }
+            }
+            p.cursor {
+                animation: cursor 0.4s infinite;
+            }
+
+            @keyframes cursor {
+                0% {
+                    border-right: 1px solid #000;
+                }
+                50% {
+                    border-right: 1px solid #fff;
+                }
+                100% {
+                    border-right: 1px solid #000;
+                }
+            }
+            p {
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                font-size: 40px;
+                font-family: "Noto Sans KR", sans-serif;
+                span {
+                }
+            }
+        }
+    }
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    .main.active {
+        opacity: 1;
+    }
+    .main {
+        transition: 0.5s;
+        opacity: 0;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        text {
+            font-size: 68px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Le_Murmure-Regular", sans-serif;
+            color: #555;
+        }
+        .app-text {
+            transition: 0.3s;
+        }
+        .imgList {
+            width: 100vw;
+            overflow: hidden;
+            .move {
+                width: 100%;
+                position: relative;
+                height: 100vh;
+                li {
+                    transition: 0.5s;
+                    position: absolute;
+                    width: 20%;
+                    filter: brightness(50%);
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                li.active {
+                    filter: brightness(100%);
+                }
+                li:nth-of-type(1) {
+                    transform: translateX(50%);
+                }
+
+                li:nth-of-type(2) {
+                    transform: translateX(200%);
+                }
+
+                li:nth-of-type(3) {
+                    transform: translateX(350%);
+                }
+
+                li:nth-of-type(4) {
+                    transform: translateX(500%);
+                }
+
+                li:nth-of-type(5) {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+
+        .list {
+            position: absolute;
+            height: 700px;
+            width: 1500px;
+            left: 50%;
+            bottom: -50px;
+            transform: translateX(-50%);
+        }
+
+        .nav {
+            position: absolute;
+            left: 50%;
+            bottom: 8%;
+            width: 12%;
+            transform: translateX(-50%);
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                li {
+                    width: 15%;
+                    svg {
+                        fill: #1f1f1f;
+                    }
+                }
+                li:hover {
+                    svg {
+                        transition: 0.1s;
+                        fill: #fff;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
