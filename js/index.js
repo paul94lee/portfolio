@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
             cCode = str.charCodeAt(i);
             //빈칸인 경우
             if (cCode == 32) {
-                chars.push(" ");
+                chars.push("&nbsp;");
                 continue;
             } // 한글이 아닌 경우 주로 영어
             if (cCode < 0xAC00 || cCode > 0xD7A3) {
@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
             // 중성 
             cho = (((cCode - jong) / 28) - jung) / 21
             // 초성 
-            console.log(cho, jung, jong)
+            // console.log(cho, jung, jong)
             //기본 코드 테스트가 ㅌㅔㅅ-ㅌ- 형식으로 저장됨 
             // chars.push(cCho[cho], cJung[jung]); 
             // if (cJong[jong] !== '') { 
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     //타이핑할 문장
-    var result1 = "저는 신입 Front-end 개발자 이재욱입니다.";
+    var result1 = "신입 Front-end 개발자 이재욱의 포트폴리오입니다.";
     var typeing1 = [];
     result1 = result1.split(''); // 한글자씩자름
 
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var imax1 = typeing1.length;
     resultDiv1.classList.add("cursor");
     //setInterval을 이용해 반복적으로 출력 
-    setTimeout(() => {
+    setTimeout(() => { //첫 타이핑
         var inter = setInterval(typi, 100);
         function typi() {
             //글자수만큼 반복후 종료 
@@ -107,6 +107,7 @@ window.addEventListener('DOMContentLoaded', function () {
             } else {
 
                 clearInterval(inter);
+                resultDiv1.innerHTML = text;
                 text = "";
                 i = 0;
                 j = 0;
@@ -118,40 +119,33 @@ window.addEventListener('DOMContentLoaded', function () {
 
         }
     }, 1000);
-    // setTimeout(() => {
 
-    //     var texts = document.querySelectorAll('.result1 span');
-    //     for (var i = texts.length - 1; i >= 0; i--) {
-    //         setTimeout(() => {
+    setTimeout(() => { //타이핑후 사라짐
+        var texts = document.querySelectorAll('.result1 span');
+        function start(counter) {
+            if (counter > 0) {
+                setTimeout(function () {
 
-    //         }, 10 * i);
-    //         console.log(texts[i])
-    //         if (texts[i] != '') {
-    //             texts[i].style.transform = "translateY(-100%)";
-    //         }
-    //         else {
-    //             texts[i].textContent = '&nbsp;';
-    //             texts[i].style.transform = "translateY(-100%)";
-    //         }
-
-
-    //     }
-    // }, 6500);
-
-
-    setTimeout(() => {
-
-    }, 10000);
-
-
-
+                    if (texts[counter - 1] != '') {
+                        texts[counter - 1].style = "transform:translateY(-100%); opacity:0;";
+                    }
+                    else {
+                        texts[counter - 1].style = "transform:translateY(-100%); opacity:0;";
+                    }
+                    counter--;
+                    console.log(counter);
+                    start(counter);
+                }, 10);
+            }
+        }
+        start(texts.length);
+    }, 8000);
     setTimeout(() => {
         intro.classList.remove('active');
         setTimeout(() => {
-
             main.classList.add('active');
         }, 1000);
-    }, 8000);
+    }, 8500);
 
 
 

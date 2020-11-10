@@ -72,6 +72,14 @@ body .intro div p.result1 {
   margin: 5px;
 }
 
+body .intro div p.result1 span {
+  display: inline-block;
+  -webkit-transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 body .intro div p.cursor {
   -webkit-animation: cursor 0.4s infinite;
           animation: cursor 0.4s infinite;
