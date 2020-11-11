@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Six+Caps&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 @font-face {
   font-family: "Le_Murmure-Regular";
   src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.eot");
@@ -25,6 +24,7 @@
 }
 
 body {
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -37,8 +37,6 @@ body .intro.active {
 }
 
 body .intro {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   opacity: 0;
   background-color: #000;
   z-index: -10;
@@ -49,72 +47,63 @@ body .intro {
   height: 100vh;
 }
 
-body .intro div {
+body .intro p {
+  width: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-body .intro div p.result1 {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: inline-block;
-  font-size: 30px;
-  height: 24px;
-  line-height: 24px;
-  border-right: 1px solid #000;
-  padding-right: 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 5px;
-}
-
-body .intro div p.result1 span {
-  display: inline-block;
-  -webkit-transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-body .intro div p.cursor {
-  -webkit-animation: cursor 0.4s infinite;
-          animation: cursor 0.4s infinite;
-}
-
-@-webkit-keyframes cursor {
-  0% {
-    border-right: 1px solid #000;
-  }
-  50% {
-    border-right: 1px solid #fff;
-  }
-  100% {
-    border-right: 1px solid #000;
-  }
-}
-
-@keyframes cursor {
-  0% {
-    border-right: 1px solid #000;
-  }
-  50% {
-    border-right: 1px solid #fff;
-  }
-  100% {
-    border-right: 1px solid #000;
-  }
-}
-
-body .intro div p {
-  width: 100%;
   text-align: center;
+}
+
+body .intro p span {
+  display: inline-block;
+  vertical-align: middle;
   color: #fff;
-  font-size: 40px;
+  font-weight: 700;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+body .intro p span.count {
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  -webkit-animation: countAni 0.6s linear;
+          animation: countAni 0.6s linear;
+}
+
+@-webkit-keyframes countAni {
+  0% {
+    font-size: 90vw;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    font-size: 0px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes countAni {
+  0% {
+    font-size: 90vw;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    font-size: 0px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+body .intro p .front {
+  font-size: 100px;
+}
+
+body .intro p .second {
+  font-size: 40px;
 }
 
 body .main.active {
@@ -122,8 +111,8 @@ body .main.active {
 }
 
 body .main {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: opacity 1.3s linear;
+  transition: opacity 1.3s linear;
   opacity: 0;
 }
 
@@ -137,12 +126,12 @@ body .main text {
   text-align: center;
   text-transform: uppercase;
   font-family: "Le_Murmure-Regular", sans-serif;
-  color: #555;
+  color: #1f1f1f;
 }
 
 body .main .app-text {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body .main .imgList {
@@ -229,11 +218,17 @@ body .main .nav ul {
 }
 
 body .main .nav ul li {
+  position: relative;
   width: 15%;
+  overflow: hidden;
 }
 
 body .main .nav ul li svg {
   fill: #1f1f1f;
+}
+
+body .main .nav ul li:hover {
+  overflow: visible;
 }
 
 body .main .nav ul li:hover svg {
@@ -242,5 +237,38 @@ body .main .nav ul li:hover svg {
   fill: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+body .main .nav ul .profile:before {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  content: "profile";
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+  color: #fff;
+}
+
+body .main .nav ul .awards:before {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  content: "awards";
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+  color: #fff;
+}
+
+body .main .nav ul .contact:before {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  content: "contact";
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

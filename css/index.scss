@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Six+Caps&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 @font-face {
     font-family: "Le_Murmure-Regular";
     src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.eot");
@@ -9,6 +8,7 @@
     font-family: "Le_Murmure-Regular";
     src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.woff");
 }
+
 * {
     list-style: none;
     user-select: none;
@@ -20,12 +20,12 @@
 }
 
 body {
+    position: relative;
     .intro.active {
         z-index: 10;
         opacity: 1;
     }
     .intro {
-        transition: 0.5s;
         opacity: 0;
         background-color: #000;
         z-index: -10;
@@ -34,51 +34,44 @@ body {
         top: 0;
         width: 100vw;
         height: 100vh;
-        div {
+        p {
+            width: 50%;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            p.result1 {
-                transition: 0.5s;
+            text-align: center;
+            span {
                 display: inline-block;
-                font-size: 30px;
-                height: 24px;
-                line-height: 24px;
-                border-right: 1px solid #000;
-                padding-right: 2px;
-                box-sizing: border-box;
-                padding: 0;
-                margin: 5px;
-                span {
-                    display: inline-block;
-                    transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1),
-                        transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-                }
-            }
-            p.cursor {
-                animation: cursor 0.4s infinite;
-            }
 
-            @keyframes cursor {
+                vertical-align: middle;
+                color: #fff;
+
+                font-weight: 700;
+                font-family: "Noto Sans KR", sans-serif;
+            }
+            span.count {
+                font-weight: 700;
+                font-family: "Roboto Condensed", sans-serif;
+
+                animation: countAni 0.6s linear;
+            }
+            @keyframes countAni {
                 0% {
-                    border-right: 1px solid #000;
-                }
-                50% {
-                    border-right: 1px solid #fff;
+                    font-size: 90vw;
+                    transform: scale(2);
                 }
                 100% {
-                    border-right: 1px solid #000;
+                    font-size: 0px;
+                    transform: scale(0);
                 }
             }
-            p {
-                width: 100%;
-                text-align: center;
-                color: #fff;
+            .front {
+                font-size: 100px;
+            }
+
+            .second {
                 font-size: 40px;
-                font-family: "Noto Sans KR", sans-serif;
-                span {
-                }
             }
         }
     }
@@ -90,7 +83,7 @@ body {
         opacity: 1;
     }
     .main {
-        transition: 0.5s;
+        transition: opacity 1.3s linear;
         opacity: 0;
         svg {
             width: 100%;
@@ -101,10 +94,10 @@ body {
             text-align: center;
             text-transform: uppercase;
             font-family: "Le_Murmure-Regular", sans-serif;
-            color: #555;
+            color: #1f1f1f;
         }
         .app-text {
-            transition: 0.3s;
+            transition: 0.5s;
         }
         .imgList {
             width: 100vw;
@@ -169,17 +162,51 @@ body {
                 justify-content: space-around;
 
                 li {
+                    position: relative;
                     width: 15%;
+                    overflow: hidden;
                     svg {
                         fill: #1f1f1f;
                     }
                 }
+
                 li:hover {
+                    overflow: visible;
                     svg {
                         transition: 0.1s;
                         fill: #fff;
                         transform: scale(1.1);
                     }
+                }
+                .profile:before {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 10px;
+                    content: "profile";
+                    position: absolute;
+                    bottom: 110%;
+                    left: 0;
+                    color: #fff;
+                }
+                .awards:before {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 10px;
+                    content: "awards";
+                    position: absolute;
+                    bottom: 110%;
+                    left: 0;
+                    color: #fff;
+                }
+                .contact:before {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 10px;
+                    content: "contact";
+                    position: absolute;
+                    bottom: 110%;
+                    left: 0;
+                    color: #fff;
                 }
             }
         }

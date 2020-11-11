@@ -11,147 +11,164 @@ window.addEventListener('DOMContentLoaded', function () {
     var titImg = document.querySelector('.tit');
     var intro = document.querySelector('.intro');
     var main = document.querySelector('.main');
-
-
+    var front = document.querySelector('.front');
+    var second = document.querySelector('.second');
 
     var titArr = ['react Web', 'animations', 'UZEN', 'soodam', 'liability'];
-    var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/liability.jpg'];
+    var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/UZENvisual.jpg'];
 
-    String.prototype.toKorChars = function () {
-        var cCho = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'],
-            cJung = ['ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ'],
-            cJong = ['', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'], cho, jung, jong;
-        var str = this,
-            cnt = str.length,
-            chars = [],
-            cCode;
+    var introArr = ['안녕하세요 ', '제 ', '이름은 ', '이재욱 ', '입니다.', '포트폴리오를 ', '보려고 ', '들어오셨죠?', '이제', '곧 ', '보실 수 ', '있습니다.', '3', '2', '1'];
+    intro.classList.add('active');
+    start1(0, 600)
+    function start1(counter, time) {
+        if (counter < introArr.length) {
+            setTimeout(function () {
+                switch (introArr[counter]) {
+                    case '안녕하세요 ':
+                        time = 250;
+                        front.style = 'font-size:80px                ';
+                        front.textContent = introArr[counter];
 
-        for (var i = 0; i < cnt; i++) {
-            cCode = str.charCodeAt(i);
-            //빈칸인 경우
-            if (cCode == 32) {
-                chars.push("&nbsp;");
-                continue;
-            } // 한글이 아닌 경우 주로 영어
-            if (cCode < 0xAC00 || cCode > 0xD7A3) {
-                chars.push(str.charAt(i)); continue;
+                        break;
 
-            }
-            cCode = str.charCodeAt(i) - 0xAC00;
+                    case '이름은 ':
+                        second.style = 'font-size:40px';
+                        second.textContent += introArr[counter];
+                        break;
+                    case '이재욱 ':
+                        time = 400;
 
-            jong = cCode % 28;
-            // 종성 
+                        second.textContent = '';
+                        intro.style.background = "#fff";
 
-            jung = ((cCode - jong) / 28) % 21
+                        front.style = 'font-size:150px;color:#000;transition:.2s;';
+                        for (var i = 0; i < introArr[counter].length; i++) {
 
-            // 중성 
-            cho = (((cCode - jong) / 28) - jung) / 21
-            // 초성 
-            // console.log(cho, jung, jong)
-            //기본 코드 테스트가 ㅌㅔㅅ-ㅌ- 형식으로 저장됨 
-            // chars.push(cCho[cho], cJung[jung]); 
-            // if (cJong[jong] !== '') { 
-            //     chars.push(cJong[jong]); 
-            //     } 
+                            front.textContent = introArr[counter]; introArr[counter][i];
 
 
-            //  테스트라는 문장이 있으면 ㅌ테ㅅ스ㅌ트 형식으로 저장되도록함 (타이핑을 위해서)
-            chars.push(cCho[cho]);
-            chars.push(String.fromCharCode(44032 + (cho * 588) + (jung * 28)));
-            if (cJong[jong] !== '') {
-                chars.push(String.fromCharCode(44032 + (cho * 588) + (jung * 28) + jong));
-            }
+                        }
+                        break;
+                    case '입니다.':
 
-        }
-        return chars;
-    }
+                        second.style = 'display:block;font-size:50px;color:#000;    vertical-align:baseline;transition:.2s;';
+                        second.textContent = introArr[counter];
+                        break;
 
+                    case '제 ': time = 250;
+                        second.textContent = '';
+                        intro.style.background = "#000";
+                        front.style = 'font-size:40px;color:#fff; transition:.1s;';
+                        second.style = 'font-size:40px;color:#fff;vertical-align: middle;';
+                        front.textContent = introArr[counter];
+                        break;
+                    case '포트폴리오를 ':
+                        time = 250;
+                        second.textContent = '';
+                        intro.style.background = "#000";
+                        front.textContent = '';
+                        second.style = 'display:inline-block;font-size:40px;color:#fff;vertical-align: middle;';
+                        front.style = 'font-size:40px';
+                        second.textContent = introArr[counter];
+                        break;
+                    case '보려고 ':
+                        front.style = 'font-size:40px';
+                        second.textContent += introArr[counter];
 
-    //타이핑할 문장
-    var result1 = "신입 Front-end 개발자 이재욱의 포트폴리오입니다.";
-    var typeing1 = [];
-    result1 = result1.split(''); // 한글자씩자름
+                        break;
 
-    //각글자 초성,중성,종성으로 나눔
-    for (var i = 0; i < result1.length; i++) {
-        typeing1[i] = result1[i].toKorChars();
-    }
-    //출력할 엘리먼트요소 가져옴 
-    var resultDiv1 = document.getElementsByClassName("result1")[0];
+                    case '이제 ':
+                        second.textContent = '';
+                        intro.style.background = "#000";
+                        front.style = 'font-size:40px;color:#fff;transition:.2s;';
+                        second.style = 'font-size:40px;color:#fff;';
+                        front.textContent = introArr[counter];
+                        break;
+                    case '곧 ':
+                        front.style = 'font-size:40px';
+                        second.textContent += introArr[counter];
+                        break;
+                    case '보실 수 ':
+                        front.style = 'font-size:40px';
+                        second.textContent += introArr[counter];
+                        break;
 
-    //
-    var text = "";
-    var i = 0;
-    var j = 0;
+                    case '1':
+                    case '3':
+                        time = 600;
+                        second.textContent = '';
+                        front.style = 'font-size:0px;color:#fff;                    transform: scale(2);';
+                        front.textContent = introArr[counter];
+                        intro.style.background = "#000";
+                        front.classList.add('count');
+                        break;
+                    case '2':
+                        time = 600;
+                        front.classList.remove('count');
+                        front.textContent = '';
+                        second.textContent = introArr[counter];
 
-    //총글자수
-    var imax1 = typeing1.length;
-    resultDiv1.classList.add("cursor");
-    //setInterval을 이용해 반복적으로 출력 
-    setTimeout(() => { //첫 타이핑
-        var inter = setInterval(typi, 100);
-        function typi() {
-            //글자수만큼 반복후 종료 
+                        second.style = 'font-size:1000px; color:#000;transform: scale(2);';
 
-            if (i <= imax1 - 1) {
-                //각 글자가 초성 중성 종성 순서대로 추가되도록 
-                var jmax1 = typeing1[i].length;
-                resultDiv1.innerHTML = text + typeing1[i][j];
+                        intro.style.background = "#fff";
+                        second.classList.add('count');
+                        break;
 
-                j++;
-                if (j == jmax1) {
-                    text += "<span>" + typeing1[i][j - 1] + "</span>";//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
-                    i++;
-                    j = 0;
+                    default:
+                        intro.style.background = "#000";
+                        front.style = 'font-size:40px;color:#fff; transition: 0s;';
+                        front.textContent = introArr[counter];
+                        second.textContent = '';
                 }
-            } else {
-
-                clearInterval(inter);
-                resultDiv1.innerHTML = text;
-                text = "";
-                i = 0;
-                j = 0;
-                setTimeout(function () {
-                    resultDiv1.classList.remove("cursor");
-
-                }, 400);
-            }
-
+                counter++;
+                start1(counter, time);
+            }, time);
         }
-    }, 1000);
+    }
 
-    setTimeout(() => { //타이핑후 사라짐
-        var texts = document.querySelectorAll('.result1 span');
-        function start(counter) {
-            if (counter > 0) {
-                setTimeout(function () {
 
-                    if (texts[counter - 1] != '') {
-                        texts[counter - 1].style = "transform:translateY(-100%); opacity:0;";
-                    }
-                    else {
-                        texts[counter - 1].style = "transform:translateY(-100%); opacity:0;";
-                    }
-                    counter--;
-                    console.log(counter);
-                    start(counter);
-                }, 10);
-            }
-        }
-        start(texts.length);
-    }, 8000);
+
     setTimeout(() => {
         intro.classList.remove('active');
-        setTimeout(() => {
-            main.classList.add('active');
-        }, 1000);
-    }, 8500);
+        main.classList.add('active');
+        change();
+    }, 6300);
 
 
 
 
-    change();
+
+
+
+
+
+
+    //컨텐츠 전환
     function change() {
+        startSpin(0);
+        function startSpin(spinCont) {
+            if (spinCont < 90) {
+                setTimeout(function () {
+
+                    rightRota();
+                    imgRightRota();
+
+                    console.log(spinCont)
+
+                    startSpin(spinCont);
+                }, spinCont / 2.5);
+                if (spinCont === 0) {
+                    titImg.classList.remove('active');
+                    target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
+                }
+                if (spinCont === 89) {
+                    titImg.classList.add('active');
+                    target[2].firstElementChild.setAttribute('fill', '#fff');
+                }
+                spinCont++;
+            }
+        }
+
         window.addEventListener('mousedown', mouseCalStart);
         window.addEventListener('wheel', wheel)
         window.addEventListener('mousemove', function (e) {
