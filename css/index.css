@@ -230,10 +230,6 @@ body .main .nav ul li {
   overflow: hidden;
 }
 
-body .main .nav ul li svg {
-  fill: #1f1f1f;
-}
-
 body .main .nav ul li:hover {
   overflow: visible;
 }
@@ -241,7 +237,6 @@ body .main .nav ul li:hover {
 body .main .nav ul li:hover svg {
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  fill: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
