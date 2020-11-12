@@ -1,3 +1,4 @@
+"use strict";
 window.addEventListener('DOMContentLoaded', function () {
 
     var x = 0;
@@ -97,7 +98,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     case '3':
                         time = 600;
                         second.textContent = '';
-                        front.style = 'font-size:0px;color:#fff;                    transform: scale(2);';
+                        front.style = 'font-size:0px;color:#fff; transform: scale(2);';
                         front.textContent = introArr[counter];
                         intro.style.background = "#000";
                         front.classList.add('count');
@@ -126,22 +127,11 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-
-
     setTimeout(() => {
         intro.classList.remove('active');
         main.classList.add('active');
         change();
     }, 6300);
-
-
-
-
-
-
-
-
-
 
     //컨텐츠 전환
     function change() {
@@ -152,9 +142,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
                     rightRota();
                     imgRightRota();
-
-                    console.log(spinCont)
-
                     startSpin(spinCont);
                 }, spinCont / 2.5);
                 if (spinCont === 0) {
@@ -343,4 +330,9 @@ window.addEventListener('DOMContentLoaded', function () {
         }
 
     };
+
+    titImg.addEventListener('click', function () {
+        console.log('click');
+    })
+
 });

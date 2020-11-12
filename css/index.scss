@@ -112,12 +112,17 @@ body {
                     width: 20%;
                     filter: brightness(50%);
                     img {
-                        width: 100%;
+                        transition: 0.5s;
+                        width: 97%;
                         height: auto;
                     }
                 }
                 li.active {
                     filter: brightness(100%);
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
                 li:nth-of-type(1) {
                     transform: translateX(50%);

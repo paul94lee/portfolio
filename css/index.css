@@ -155,13 +155,20 @@ body .main .imgList .move li {
 }
 
 body .main .imgList .move li img {
-  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 97%;
   height: auto;
 }
 
 body .main .imgList .move li.active {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
+}
+
+body .main .imgList .move li.active img {
+  width: 100%;
+  height: auto;
 }
 
 body .main .imgList .move li:nth-of-type(1) {
