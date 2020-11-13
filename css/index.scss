@@ -170,8 +170,8 @@ body {
                     position: relative;
                     width: 15%;
                     overflow: hidden;
-                    svg {
-                        // fill: #1f1f1f;
+                    svg{
+                        fill: #1f1f1f;
                     }
                 }
 
@@ -179,7 +179,7 @@ body {
                     overflow: visible;
                     svg {
                         transition: 0.1s;
-                        // fill: #fff;
+                        fill: #fff;
                         transform: scale(1.1);
                     }
                 }
