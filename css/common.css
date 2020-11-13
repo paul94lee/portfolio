@@ -12,12 +12,18 @@ a {
 .fx {
     display: flex;
 }
-.wd80{
-    width: 80%;
+.wd75 {
+    width: 75%;
 }
-.wd90{
+.wd72 {
+    width: 72%;
+}
+.wd90 {
     width: 90%;
 }
-.wd100{
+.wd100 {
     width: 100%;
+}
+p {
+    color: #1f1f1f;
 }

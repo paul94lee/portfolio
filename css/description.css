@@ -19,6 +19,7 @@
 
 * h2 {
   font-size: 66px;
+  white-space: pre-line;
 }
 
 * h4 {
@@ -81,11 +82,40 @@ body .title .tit-wrap .titImg img {
 .content-wrap > section {
   border: 1px solid #000;
   margin: 0 auto;
+  margin-top: 100px;
+}
+
+.content-wrap > section > h2 {
+  margin-bottom: 100px;
+}
+
+.content-wrap > section .deform {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-wrap > section .deform p {
+  font-size: 22px;
+}
+
+.content-wrap > section .deform p:nth-of-type(1) {
+  font-weight: bold;
+  width: 30%;
+}
+
+.content-wrap > section .deform p:nth-of-type(2) {
+  width: 58%;
 }
 
 .content-wrap > div {
   border: solid #f00;
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 .content-wrap .about h2 {
@@ -93,7 +123,41 @@ body .title .tit-wrap .titImg img {
 }
 
 .content-wrap .about > div {
-  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content-wrap .about > div > p {
+  width: 60%;
+  margin-right: 12%;
+  font-size: 1.5em;
+}
+
+.content-wrap .about > div .myWork div {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.content-wrap .about > div .myWork div h4 {
+  margin-bottom: 20px;
+}
+
+.content-wrap .vdo {
+  height: auto;
+}
+
+.content-wrap .vdo video {
+  width: 100%;
+  height: auto;
+  background: #ccc;
+}
+
+.content-wrap .solve .solveProcess {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,17 +167,36 @@ body .title .tit-wrap .titImg img {
           justify-content: space-between;
 }
 
-.content-wrap .about > div > p {
-  width: 60%;
-  margin-right: 10%;
-  font-size: 1.5em;
+.content-wrap .solve .solveProcess div {
+  width: 50%;
 }
 
-.content-wrap .about > div .myWork {
-  margin-right: 10%;
+.content-wrap .solve .solveProcess div h4 {
+  text-align: center;
 }
 
-.content-wrap .about > div .myWork div {
+.content-wrap .site-map .site-wrap {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-wrap .site-map .site-wrap > div {
+  background-color: #ccc;
+  border-radius: 20px;
+  margin: 0 10%;
+  margin-bottom: 5%;
+  width: 30%;
+}
+
+.content-wrap .site-map .site-wrap > div img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=description.css.map */

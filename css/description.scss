@@ -13,6 +13,7 @@
     }
     h2 {
         font-size: 66px;
+        white-space: pre-line;
     }
     h4 {
         font-size: 18px;
@@ -67,30 +68,51 @@ body {
     > section {
         border: 1px solid #000;
         margin: 0 auto;
+        margin-top: 100px;
+        > h2 {
+            margin-bottom: 100px;
+        }
+        .deform {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 22px;
+            }
+            p:nth-of-type(1) {
+                font-weight: bold;
+
+                width: 30%;
+            }
+            p:nth-of-type(2) {
+                width: 58%;
+            }
+        }
     }
     > div {
         border: solid #f00;
         margin: 0 auto;
+        margin-top: 100px;
     }
     .about {
         h2 {
             width: 100%;
         }
         > div {
-            margin-top: 50px;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             > p {
                 width: 60%;
-                margin-right: 10%;
+                margin-right: 12%;
                 font-size: 1.5em;
             }
             .myWork {
-                margin-right: 10%;
                 div {
+                    margin-bottom: 50px;
                     width: 100%;
                     h4 {
+                        margin-bottom: 20px;
                     }
                     p {
                     }
@@ -99,26 +121,54 @@ body {
         }
     }
     .vdo {
+        height: auto;
+
         video {
+            width: 100%;
+            height: auto;
+            background: #ccc;
         }
     }
     .solve {
         h2 {
         }
-        p {
-        }
         .solveProcess {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
             div {
+                width: 50%;
+
                 h4 {
+                    text-align: center;
                 }
                 div {
                 }
             }
         }
     }
-    .siteMap {
+    .site-map {
+        .site-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            > div {
+                background-color: #ccc;
+
+                border-radius: 20px;
+                margin: 0 10%;
+                margin-bottom: 5%;
+                width: 30%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
     }
     .reaction {
+        
     }
     .visual {
     }
