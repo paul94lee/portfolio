@@ -289,22 +289,26 @@ body {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    flex-wrap: wrap;
-                    figure {
-                        background-color: #ccc;
-
-                        border-radius: 20px;
-                        margin: 0 10%;
-                        margin-bottom: 5%;
+                    // flex-wrap: wrap;
+                    a {
+                        background-color: #fff;
                         width: 30%;
-                        img {
+                        border-radius: 20px;
+                        margin: 0 5%;
+                        margin-bottom: 5%;
+                        figure {
                             width: 100%;
-                            height: auto;
-                        }
-                        figcaption {
-                            text-align: center;
-                            padding: 20px 0;
-                            width: 100%;
+
+                            img {
+                                border-radius: 20px;
+                                width: 100%;
+                                height: auto;
+                            }
+                            figcaption {
+                                text-align: center;
+                                padding: 20px 0;
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -319,7 +323,7 @@ body {
                         text-align: center;
                         width: 20%;
                         padding: 20px 0;
-                        background-color: #ccc;
+                        background-color: #ddd;
                     }
                 }
             }
@@ -338,9 +342,8 @@ body {
                     }
                     .typo {
                         width: 60%;
-                        p {
-                            white-space: pre-line;
-                            font-size: 70px;
+                        img {
+                            width: 80%;
                         }
                     }
                     .colors {
@@ -355,6 +358,10 @@ body {
                             padding: 20px;
                             text-transform: uppercase;
                             font-size: 20px;
+                            span {
+                                color: #fff;
+                                mix-blend-mode: difference;
+                            }
                         }
                     }
                 }

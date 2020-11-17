@@ -344,24 +344,27 @@ body .change .content-wrap .site-map .site-wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-body .change .content-wrap .site-map .site-wrap figure {
-  background-color: #ccc;
-  border-radius: 20px;
-  margin: 0 10%;
-  margin-bottom: 5%;
+body .change .content-wrap .site-map .site-wrap a {
+  background-color: #fff;
   width: 30%;
+  border-radius: 20px;
+  margin: 0 5%;
+  margin-bottom: 5%;
 }
 
-body .change .content-wrap .site-map .site-wrap figure img {
+body .change .content-wrap .site-map .site-wrap a figure {
+  width: 100%;
+}
+
+body .change .content-wrap .site-map .site-wrap a figure img {
+  border-radius: 20px;
   width: 100%;
   height: auto;
 }
 
-body .change .content-wrap .site-map .site-wrap figure figcaption {
+body .change .content-wrap .site-map .site-wrap a figure figcaption {
   text-align: center;
   padding: 20px 0;
   width: 100%;
@@ -382,7 +385,7 @@ body .change .content-wrap .reaction div span {
   text-align: center;
   width: 20%;
   padding: 20px 0;
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 body .change .content-wrap .visual {
@@ -407,9 +410,8 @@ body .change .content-wrap .visual .visCon .typo {
   width: 60%;
 }
 
-body .change .content-wrap .visual .visCon .typo p {
-  white-space: pre-line;
-  font-size: 70px;
+body .change .content-wrap .visual .visCon .typo img {
+  width: 80%;
 }
 
 body .change .content-wrap .visual .visCon .colors {
@@ -425,6 +427,11 @@ body .change .content-wrap .visual .visCon .colors div {
   padding: 20px;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+body .change .content-wrap .visual .visCon .colors div span {
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 body .next {

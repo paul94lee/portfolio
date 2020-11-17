@@ -15,8 +15,9 @@ function init() {
                 let title, titSub, titLink, titImg, titBg, aboutTit, aboutCon, aboutCli, aboutDate, vdoLink, vdoCon, issue, solve, siteImg, siteLink, siteTit, reChange, dsiConcept, dsiCon, typoImg, dsiColor, nextTit, nextImg, nextColor;
                 let iss = '';
                 let sol = '';
-                // let iss='';
-                // let iss='';
+                let fig = '';
+                let reCh = '';
+                let dsiCols = '';
                 var contentArea = document.querySelector('.change');
                 json[classy].forEach(function (value, key) {
                     title = value.title; titSub = value.titSub; titLink = value.titLink; titImg = value.titImg; titBg = value.titBg;
@@ -46,13 +47,19 @@ function init() {
                     });
 
 
+                    siteImg.forEach(function (value, key) {
+                        fig += "<a href='" + siteLink[key] + "'><figure><img src='" + value + "' alt=''><figcaption>" + siteTit[key] + "</figcaption></figure></a>";
+                    })
 
-                    // <figure>
-                    //     <img src='' alt=''>
-                    //     <figcaption>
-                    //         메인페이지
-                    //     </figcaption>
-                    // </figure>
+                    reChange.forEach(function (value, key) {
+                        reCh += "<span>" + value + "</span>";
+                    });
+
+                    dsiColor.forEach(function (value, key) {
+                        dsiCols += "<div style='background-color:" + value + "'><span>" + value + "</span></div>";
+                    })
+
+
 
 
 
@@ -67,21 +74,19 @@ function init() {
 
                     conCode += "<div class='vdo wd90'><video><source src=" + vdoLink + "></video><p><i>" + vdoCon + "</i></p></div>";
 
-                    conCode += "<section class='solve wd72'>< h3 > 1.</h3 ><h2>Solving problems</h2><div class='deform'><p>이곳은 문제해결 설명란입니다.</p><p>코딩하면서 여러가지 문제점에 도달했는데 이를 해결하기 위해 시도했거나 개선한 점을 기술한다.</p></div><div class='solveProcess'><div><h4>발생 문제</h4><div>" + iss + "</div></div><div><h4>해결 방안</h4><div>" + sol + "</div></div></div></section>";
+                    conCode += "<section class='solve wd72'><h3> 1.</h3><h2>Solving problems</h2><div class='deform'><p>이곳은 문제해결 설명란입니다.</p><p>코딩하면서 여러가지 문제점에 도달했는데 이를 해결하기 위해 시도했거나 개선한 점을 기술한다.</p></div><div class='solveProcess'><div><h4>발생 문제</h4><div>" + iss + "</div></div><div><h4>해결 방안</h4><div>" + sol + "</div></div></div></section>";
 
-                    conCode += "<section class='site-map wd72' ><h3>2.</h3><h2>site map</h2><div class='site-wrap'></div></section>";
-
-                    conCode += "";
-
-                    conCode += "";
-
-                    conCode += "";
-
-                    conCode += "";
+                    conCode += "<section class='site-map wd72' ><h3>2.</h3><h2>site map</h2><div class='site-wrap'>" + fig + "</div></section>";
 
 
+                    conCode += "<section class='reaction wd72'><h3>3.</h3><h2>reactive branching point</h2><div>" + reCh + "</div></section>";
+
+                    conCode += "<section class='visual wd72'><h3> 4.</h3 ><h2>Visual identity</h2><div class='deform'><p>" + dsiConcept + "</p><p>" + dsiCon + "</p></div><div class='visCon'><div class='typo'><h4>typograpy</h4><img src='" + typoImg + "' alt=''></div><div class='colors'><h4>colors</h4>" + dsiCols + "</div></section>";
 
                     conCode += "</div>";
+
+                    conCode += "<div class='next wd100' style='background-color:" + nextColor + ";'><div><h4>up next</h4><h1>" + nextTit + "</h1><img src='" + nextImg + "' alt=''></div></div>";
+
 
                     contentArea.innerHTML = conCode;
 
@@ -104,8 +109,14 @@ function init() {
                         tit.style.display = "none";
                         nex.style.display = "block";
                     }
-                };
+                }; console.log(dsiCols)
+                // var nextDetail = document.querySelector('.next');
+                // nextDetail.addEventListener('click', function () {
+                //     pageChange(nextTit);
+                // });
+
             });
+
     }
 
 
