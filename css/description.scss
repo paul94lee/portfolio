@@ -7,7 +7,6 @@
     }
     a {
         text-decoration-style: none;
-        color: #000;
     }
     h1 {
         font-size: 140px;
@@ -26,6 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    overflow-x: hidden;
     .navi {
         position: fixed;
         // background-color: #fff;
@@ -52,6 +52,7 @@ body {
                 color: #fff;
                 text-transform: uppercase;
                 div {
+                    color: #fff;
                     display: inline-block;
                     height: 15px;
                     margin-right: 10px;
@@ -73,12 +74,11 @@ body {
         display: block;
         top: 0;
         z-index: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        background-color: #000;
 
         .tit-wrap {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: space-between;
@@ -129,6 +129,54 @@ body {
             }
         }
     }
+
+    .linkIcon {
+        transition: 0.3s;
+        position: fixed;
+        z-index: 20;
+        right: 10%;
+        bottom: 10%;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        overflow: hidden;
+
+        .linkIconActive {
+            transition: 0.3s;
+            position: absolute;
+            color: #fff;
+            right: 0;
+            width: 180px;
+            opacity: 0;
+            white-space: nowrap;
+
+            margin: 22px 0;
+            margin-left: 20px;
+        }
+        .linkIconBasic {
+            img {
+                width: 20px;
+                transition: 0.3s;
+                position: absolute;
+                top: 50%;
+                right: 25px;
+                height: 50%;
+                transform: translate(0%, -50%) rotate(0deg);
+            }
+        }
+    }
+    .linkIcon:hover {
+        width: 200px;
+        .linkIconActive {
+            opacity: 1;
+        }
+        .linkIconBasic {
+            img {
+                transform: translate(0%, -50%) rotate(45deg);
+            }
+        }
+    }
+
     .content-wrap {
         position: relative;
         z-index: 1;
@@ -178,7 +226,7 @@ body {
         .about {
             padding-top: 100px;
             h2 {
-                width: 100%;
+                width: 70%;
             }
             > div {
                 width: 100%;
@@ -314,7 +362,7 @@ body {
 
     .next {
         display: none;
-        background: #d74545;
+        width: 100vw;
         height: 100vh;
         color: #fff;
         margin-bottom: 0;

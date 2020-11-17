@@ -11,7 +11,6 @@
 * a {
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
-  color: #000;
 }
 
 * h1 {
@@ -29,6 +28,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 body .navi {
@@ -68,6 +71,7 @@ body .navi ul li {
 }
 
 body .navi ul li div {
+  color: #fff;
   display: inline-block;
   height: 15px;
   margin-right: 10px;
@@ -92,13 +96,12 @@ body .title {
   display: block;
   top: 0;
   z-index: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: #000;
 }
 
 body .title .tit-wrap {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +162,57 @@ body .title .tit-wrap .titImg img {
           transform: translate(-50%, -50%);
 }
 
+body .linkIcon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: fixed;
+  z-index: 20;
+  right: 10%;
+  bottom: 10%;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+body .linkIcon .linkIconActive {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  color: #fff;
+  right: 0;
+  width: 180px;
+  opacity: 0;
+  white-space: nowrap;
+  margin: 22px 0;
+  margin-left: 20px;
+}
+
+body .linkIcon .linkIconBasic img {
+  width: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  height: 50%;
+  -webkit-transform: translate(0%, -50%) rotate(0deg);
+          transform: translate(0%, -50%) rotate(0deg);
+}
+
+body .linkIcon:hover {
+  width: 200px;
+}
+
+body .linkIcon:hover .linkIconActive {
+  opacity: 1;
+}
+
+body .linkIcon:hover .linkIconBasic img {
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+          transform: translate(0%, -50%) rotate(45deg);
+}
+
 body .content-wrap {
   position: relative;
   z-index: 1;
@@ -214,7 +268,7 @@ body .content-wrap .about {
 }
 
 body .content-wrap .about h2 {
-  width: 100%;
+  width: 70%;
 }
 
 body .content-wrap .about > div {
@@ -370,7 +424,7 @@ body .content-wrap .visual .visCon .colors div {
 
 body .next {
   display: none;
-  background: #d74545;
+  width: 100vw;
   height: 100vh;
   color: #fff;
   margin-bottom: 0;

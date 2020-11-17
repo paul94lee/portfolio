@@ -1,0 +1,61 @@
+{
+    "liability": [
+        {
+            "title": "Liability",
+            "titSub": "전 연인에 대한 상실감과 인간관계에서 느끼는 결핍을 표현한다.",
+            "titLink": "https://paul94lee.github.io/liability/",
+            "titImg": "img/liability-cover.jpg",
+            "titBg": "#000",
+            "aboutTit": "Liability는 blah blah ~~ Liability는 blah blah ~~",
+            "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
+            "aboutCli": "Self-Initiated",
+            "aboutDate": "20-10-11 ~ 20-10-30",
+            "vdoLink": "img/liability-cover.jpg",
+            "vdoCon": "liability 가사 페이지",
+            "issue": [
+                "aaa",
+                "bbb",
+                "ccc",
+                "ddd"
+            ],
+            "solve": [
+                "111",
+                "222",
+                "333",
+                "444"
+            ],
+            "siteImg": [
+                "img/liability-cover.jpg",
+                "img/liability-cover.jpg",
+                "img/liability-cover.jpg"
+            ],
+            "siteLink": [
+                "https://paul94lee.github.io/liability/",
+                "https://paul94lee.github.io/liability/",
+                "https://paul94lee.github.io/liability/"
+            ],
+            "siteTit": [
+                "메인페이지",
+                "메인페이지",
+                "메인페이지"
+            ],
+            "reChange": [
+                "435px",
+                "768px",
+                "1280px"
+            ],
+            "dsiConcept": "Art Direction that match the concept",
+            "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
+            "typoImg": "img/liability-cover.jpg",
+            "dsiColor": [
+                "#f1f1f1",
+                "#f1f1f1",
+                "#f1f1f1",
+                "#f1f1f1"
+            ],
+            "nextTit": "soodam",
+            "nextImg": "img/description/class08.jpg",
+            "nextColor": "#d74545"
+        }
+    ]
+}
