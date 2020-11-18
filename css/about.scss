@@ -1,0 +1,266 @@
+@import url("common.css");
+* {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration-style: none;
+    }
+    h1 {
+        font-size: 140px;
+    }
+    h2 {
+        font-size: 66px;
+        white-space: pre-line;
+        margin-bottom: 50px;
+    }
+    h3 {
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .smallTit {
+        margin-bottom: 50px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+    .deform {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 25px;
+        }
+        p:nth-of-type(1) {
+            font-weight: 700;
+
+            width: 30%;
+        }
+        p:nth-of-type(2) {
+            font-size: 25px;
+            width: 58%;
+            color: #333;
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+    .navi {
+        position: fixed;
+        // background-color: #fff;
+        top: 0;
+        width: 100%;
+        padding: 30px 5%;
+        z-index: 100;
+        color: #000;
+        mix-blend-mode: difference;
+
+        ul {
+            display: flex;
+            height: 15px;
+            justify-content: space-between;
+            li {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: bold;
+                font-size: 15px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                div {
+                    display: inline-block;
+                    height: 15px;
+                    margin-right: 10px;
+                    svg {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .forTitleFoot {
+        pointer-events: none;
+        user-select: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .title {
+        position: fixed;
+        display: block;
+        top: 0;
+        z-index: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .next {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
+        margin-bottom: 0;
+        position: fixed;
+        z-index: 0;
+        top: 0;
+    }
+
+    .content-wrap {
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        background-color: #fff;
+        > * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .horizHobby {
+            border-top: 2px solid #555;
+            border-bottom: 2px solid #555;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            div {
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+                .heart {
+                    position: absolute;
+                    width: 5%;
+                    height: 30px;
+                    background-color: #fff;
+                    left: 50%;
+                    top: 0%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 30%;
+                        animation: purse infinite 0.7s linear;
+                        @keyframes purse {
+                            0% {
+                                transform: scale(1);
+                            }
+                            50% {
+                                transform: scale(1.1);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+
+                .listMove {
+                    position: relative;
+                    height: 100px;
+                    width: 100%;
+                    ul {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 100vw;
+                        display: flex;
+                        justify-content: space-around;
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+                    ul:nth-of-type(2) {
+                        left: 100%;
+                        transform: translate(0%, -50%);
+                    }
+                    animation: casol infinite 12s linear;
+                    @keyframes casol {
+                        0% {
+                            transform: translateX(0%);
+                        }
+                        100% {
+                            transform: translateX(-100%);
+                        }
+                    }
+                }
+            }
+        }
+        .skills {
+            margin-bottom: 100px;
+            > div {
+                margin-top: 50px;
+                h4 {
+                    font-size: 25px;
+                    margin-bottom: 50px;
+                }
+                .skillUnit {
+                    margin-bottom: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        width: 20%;
+
+                        border-radius: 10px;
+                    }
+                    p {
+                        width: 70%;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .awards {
+            overflow-x: hidden;
+            width: 100%;
+            padding: 10vh 0;
+            .eachAward {
+                width: 140%;
+                height: 200px;
+                margin-bottom: 50px;
+
+                padding: 0 20%;
+
+                .awardDetail {
+                    width: 90%;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 85px 0;
+                    p {
+                        color: #000;
+                        line-height: 24px;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    p:nth-of-type(2) {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .eachAward:nth-of-type(1) {
+                background-color: #f69b00;
+            }
+            .eachAward:nth-of-type(2) {
+                background-color:#fcdd04;
+            }
+            .eachAward:nth-of-type(3) {
+                background-color: #f7d1a3;
+            }
+            .eachAward:nth-of-type(4) {
+                background-color: #eea49a;
+            }
+            .goRight {
+                transform: translate(-10%, 0) rotate(3deg);
+            }
+            .goLeft {
+                transform: translate(-10%, 0) rotate(-3deg);
+            }
+        }
+    }
+}

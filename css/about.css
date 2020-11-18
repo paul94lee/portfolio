@@ -1,0 +1,379 @@
+@import url("common.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* li {
+  list-style: none;
+}
+
+* a {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+}
+
+* h1 {
+  font-size: 140px;
+}
+
+* h2 {
+  font-size: 66px;
+  white-space: pre-line;
+  margin-bottom: 50px;
+}
+
+* h4 {
+  font-size: 20px;
+}
+
+* .smallTit {
+  margin-bottom: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html .deform {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .deform p {
+  font-size: 25px;
+}
+
+html .deform p:nth-of-type(1) {
+  font-weight: 700;
+  width: 30%;
+}
+
+html .deform p:nth-of-type(2) {
+  font-size: 25px;
+  width: 58%;
+  color: #333;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body .navi {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 5%;
+  z-index: 100;
+  color: #000;
+  mix-blend-mode: difference;
+}
+
+body .navi ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .navi ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body .navi ul li div {
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+}
+
+body .navi ul li div svg {
+  height: 100%;
+}
+
+body .forTitleFoot {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .title {
+  position: fixed;
+  display: block;
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .next {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+}
+
+body .content-wrap {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  background-color: #fff;
+}
+
+body .content-wrap > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .content-wrap .horizHobby {
+  border-top: 2px solid #555;
+  border-bottom: 2px solid #555;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+body .content-wrap .horizHobby div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body .content-wrap .horizHobby div .heart {
+  position: absolute;
+  width: 5%;
+  height: 30px;
+  background-color: #fff;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content-wrap .horizHobby div .heart img {
+  width: 30%;
+  -webkit-animation: purse infinite 0.7s linear;
+          animation: purse infinite 0.7s linear;
+}
+
+@-webkit-keyframes purse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes purse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body .content-wrap .horizHobby div .listMove {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  -webkit-animation: casol infinite 12s linear;
+          animation: casol infinite 12s linear;
+}
+
+body .content-wrap .horizHobby div .listMove ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .content-wrap .horizHobby div .listMove ul li {
+  font-size: 20px;
+}
+
+body .content-wrap .horizHobby div .listMove ul:nth-of-type(2) {
+  left: 100%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+@-webkit-keyframes casol {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes casol {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+body .content-wrap .skills {
+  margin-bottom: 100px;
+}
+
+body .content-wrap .skills > div {
+  margin-top: 50px;
+}
+
+body .content-wrap .skills > div h4 {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+body .content-wrap .skills > div .skillUnit {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content-wrap .skills > div .skillUnit img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+body .content-wrap .skills > div .skillUnit p {
+  width: 70%;
+  font-size: 25px;
+}
+
+body .content-wrap .awards {
+  overflow-x: hidden;
+  width: 100%;
+  padding: 10vh 0;
+}
+
+body .content-wrap .awards .eachAward {
+  width: 140%;
+  height: 200px;
+  margin-bottom: 50px;
+  padding: 0 20%;
+}
+
+body .content-wrap .awards .eachAward .awardDetail {
+  width: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 85px 0;
+}
+
+body .content-wrap .awards .eachAward .awardDetail p {
+  color: #000;
+  line-height: 24px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+body .content-wrap .awards .eachAward .awardDetail p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body .content-wrap .awards .eachAward:nth-of-type(1) {
+  background-color: #f69b00;
+}
+
+body .content-wrap .awards .eachAward:nth-of-type(2) {
+  background-color: #fcdd04;
+}
+
+body .content-wrap .awards .eachAward:nth-of-type(3) {
+  background-color: #f7d1a3;
+}
+
+body .content-wrap .awards .eachAward:nth-of-type(4) {
+  background-color: #eea49a;
+}
+
+body .content-wrap .awards .goRight {
+  -webkit-transform: translate(-10%, 0) rotate(3deg);
+          transform: translate(-10%, 0) rotate(3deg);
+}
+
+body .content-wrap .awards .goLeft {
+  -webkit-transform: translate(-10%, 0) rotate(-3deg);
+          transform: translate(-10%, 0) rotate(-3deg);
+}
+/*# sourceMappingURL=about.css.map */
