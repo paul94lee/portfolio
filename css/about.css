@@ -71,7 +71,7 @@ body .navi {
   width: 100%;
   padding: 30px 5%;
   z-index: 100;
-  color: #000;
+  color: #fff;
   mix-blend-mode: difference;
 }
 
@@ -93,6 +93,7 @@ body .navi ul li {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  color: #fff;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -101,6 +102,7 @@ body .navi ul li {
 }
 
 body .navi ul li div {
+  color: #fff;
   display: inline-block;
   height: 15px;
   margin-right: 10px;
@@ -127,13 +129,66 @@ body .title {
   z-index: 0;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .title .titTex {
+  position: relative;
+  width: 60%;
+  background-color: #282828;
+}
+
+body .title .titTex div {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  height: 100%;
+  width: 70%;
+}
+
+body .title .titTex div span {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+
+body .title .titTex div h2 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  font-family: "Playfair Display";
+}
+
+body .title .titImg {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #cfc1ff;
+  overflow: hidden;
+}
+
+body .title .titImg img {
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 body .next {
   display: none;
   width: 100vw;
   height: 100vh;
-  color: #fff;
+  color: #282828;
   margin-bottom: 0;
   position: fixed;
   z-index: 0;
@@ -314,17 +369,42 @@ body .content-wrap .skills > div .skillUnit p {
   font-size: 25px;
 }
 
+body .content-wrap .changeContent {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #000));
+  background: linear-gradient(#fff 50%, #000 50%);
+  padding: 200px 0;
+}
+
+body .content-wrap .changeContent div {
+  width: 80%;
+  height: 80vh;
+  background-color: #555;
+  margin: 0 auto;
+}
+
 body .content-wrap .awards {
+  background-color: #000;
   overflow-x: hidden;
+  position: relative;
   width: 100%;
   padding: 10vh 0;
+  z-index: 2;
+}
+
+body .content-wrap .awards h2 {
+  margin-left: 14%;
+  margin-bottom: 100px;
+  color: #fff;
 }
 
 body .content-wrap .awards .eachAward {
   width: 140%;
-  height: 200px;
+  height: 250px;
   margin-bottom: 50px;
+  z-index: 2;
   padding: 0 20%;
+  text-transform: uppercase;
 }
 
 body .content-wrap .awards .eachAward .awardDetail {
@@ -336,14 +416,14 @@ body .content-wrap .awards .eachAward .awardDetail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 85px 0;
+  padding: 100px 0;
 }
 
 body .content-wrap .awards .eachAward .awardDetail p {
   color: #000;
-  line-height: 24px;
-  font-size: 30px;
-  font-weight: 600;
+  line-height: 50px;
+  font-size: 50px;
+  font-weight: 500;
 }
 
 body .content-wrap .awards .eachAward .awardDetail p:nth-of-type(2) {
@@ -352,19 +432,19 @@ body .content-wrap .awards .eachAward .awardDetail p:nth-of-type(2) {
 }
 
 body .content-wrap .awards .eachAward:nth-of-type(1) {
-  background-color: #f69b00;
+  background-color: #ffffff;
 }
 
 body .content-wrap .awards .eachAward:nth-of-type(2) {
-  background-color: #fcdd04;
+  background-color: #f93701;
 }
 
 body .content-wrap .awards .eachAward:nth-of-type(3) {
-  background-color: #f7d1a3;
+  background-color: #c1c1c1;
 }
 
 body .content-wrap .awards .eachAward:nth-of-type(4) {
-  background-color: #eea49a;
+  background-color: #ffffff;
 }
 
 body .content-wrap .awards .goRight {

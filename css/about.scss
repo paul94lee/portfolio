@@ -51,12 +51,12 @@ body {
     overflow-x: hidden;
     .navi {
         position: fixed;
-        // background-color: #fff;
+
         top: 0;
         width: 100%;
         padding: 30px 5%;
         z-index: 100;
-        color: #000;
+        color: #fff;
         mix-blend-mode: difference;
 
         ul {
@@ -67,13 +67,14 @@ body {
                 display: flex;
                 align-items: center;
                 height: 100%;
-
+                color: #fff;
                 font-family: "Noto Sans KR", sans-serif;
                 font-weight: bold;
                 font-size: 15px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 div {
+                    color: #fff;
                     display: inline-block;
                     height: 15px;
                     margin-right: 10px;
@@ -97,12 +98,58 @@ body {
         z-index: 0;
         width: 100vw;
         height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        // background-color: #282828;
+
+        .titTex {
+            position: relative;
+            width: 60%;
+            background-color: #282828;
+            div {
+                position: absolute;
+                left: 20%;
+                top: 30%;
+                height: 100%;
+                width: 70%;
+                span {
+                    display: block;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                h2 {
+                    font-size: 60px;
+                    font-weight: 800;
+                    color: #fff;
+                    font-family: "Playfair Display";
+                }
+                p {
+                }
+            }
+        }
+        .titImg {
+            position: relative;
+            width: 40%;
+            height: 100%;
+            background-color: #cfc1ff;
+            overflow: hidden;
+            img {
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                filter: brightness(70%);
+            }
+        }
+
     }
     .next {
         display: none;
         width: 100vw;
         height: 100vh;
-        color: #fff;
+        color: #282828;
         margin-bottom: 0;
         position: fixed;
         z-index: 0;
@@ -214,28 +261,48 @@ body {
                 }
             }
         }
+        .changeContent {
+            width: 100%;
+            background: linear-gradient(#fff 50%, #000 50%);
+            padding: 200px 0;
+            div {
+                width: 80%;
+                height: 80vh;
+                background-color: #555;
+                margin: 0 auto;
+            }
+        }
         .awards {
+            background-color: #000;
             overflow-x: hidden;
+            position: relative;
             width: 100%;
             padding: 10vh 0;
+            z-index: 2;
+            h2 {
+                margin-left: 14%;
+                margin-bottom: 100px;
+                color: #fff;
+            }
             .eachAward {
                 width: 140%;
-                height: 200px;
+                height: 250px;
                 margin-bottom: 50px;
-
+                z-index: 2;
                 padding: 0 20%;
+                text-transform: uppercase;
 
                 .awardDetail {
                     width: 90%;
                     position: relative;
                     display: flex;
                     justify-content: space-between;
-                    padding: 85px 0;
+                    padding: 100px 0;
                     p {
                         color: #000;
-                        line-height: 24px;
-                        font-size: 30px;
-                        font-weight: 600;
+                        line-height: 50px;
+                        font-size: 50px;
+                        font-weight: 500;
                     }
                     p:nth-of-type(2) {
                         font-size: 20px;
@@ -244,16 +311,16 @@ body {
                 }
             }
             .eachAward:nth-of-type(1) {
-                background-color: #f69b00;
+                background-color: #ffffff;
             }
             .eachAward:nth-of-type(2) {
-                background-color:#fcdd04;
+                background-color: #f93701;
             }
             .eachAward:nth-of-type(3) {
-                background-color: #f7d1a3;
+                background-color: #c1c1c1;
             }
             .eachAward:nth-of-type(4) {
-                background-color: #eea49a;
+                background-color: #ffffff;
             }
             .goRight {
                 transform: translate(-10%, 0) rotate(3deg);

@@ -10,7 +10,7 @@ function init() {
         var tit = document.querySelector('.title');
         var nex = document.querySelector('.next');
         if (direc) {
-            tit.style.display = "block";
+            tit.style.display = "flex";
             nex.style.display = "none";
         }
         else {

@@ -39,3 +39,9 @@ a {
 p {
     color: #1f1f1f;
 }
+a {
+    color:inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
