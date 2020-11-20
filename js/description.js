@@ -2,8 +2,10 @@ window.addEventListener("load", init);
 
 function init() {
     var myStorage = window.localStorage;
-    
+
     pageChange(myStorage.pageName)
+
+    up();
 
     function pageChange(classy) {
 
@@ -13,7 +15,7 @@ function init() {
             .then(response => response.json()
             )
             .then(json => {
-                
+
                 var conCode = '';
                 let title, titSub, titLink, titImg, titBg, aboutTit, aboutCon, aboutCli, aboutDate, vdoLink, vdoCon, issue, solve, siteImg, siteLink, siteTit, reChange, dsiConcept, dsiCon, typoImg, dsiColor, nextTit, nextImg, nextColor;
                 let iss = '';
@@ -97,8 +99,8 @@ function init() {
                 let goBack = document.querySelector('.backHome');
                 goBack.addEventListener('click', function (e) {
                     e.preventDefault();
-                    myStorage.setItem('where',1);
-                    location.href='./index.html';
+                    myStorage.setItem('where', 1);
+                    location.href = './index.html';
                 });
 
                 //tit/foot 전환
@@ -124,24 +126,25 @@ function init() {
 
                 //다음페이지 전환
                 var chanAni = document.querySelector('.chanAni');
+
+                // chanAni
+
+
+
                 var nextDetail = document.querySelector('.next');
-
-
-
                 nextDetail.addEventListener('click', function () {
                     chanAni.classList.add('active');
                     chanAni.style = "background-color:" + nextColor;
                     setTimeout(() => {
                         window.scrollTo(0, 0);
                         pageChange(nextTit);
-
                     }, 400);
                     setTimeout(() => {
                         chanAni.classList.remove('active');
-
                     }, 1500);
 
                 });
+
 
             });
 
