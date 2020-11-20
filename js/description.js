@@ -1,8 +1,10 @@
 window.addEventListener("load", init);
 
 function init() {
+    var myStorage = window.localStorage;
+    console.log(myStorage.pageName)
+    pageChange(myStorage.pageName)
 
-    pageChange('liability')
     function pageChange(classy) {
 
         var url = 'js/json/detailData.json';
@@ -19,7 +21,8 @@ function init() {
                 let reCh = '';
                 let dsiCols = '';
                 var contentArea = document.querySelector('.change');
-                json[classy].forEach(function (value, key) {
+
+                json[classy].forEach(function (value, key) {//내용변경
                     title = value.title; titSub = value.titSub; titLink = value.titLink; titImg = value.titImg; titBg = value.titBg;
 
                     aboutTit = value.aboutTit; aboutCon = value.aboutCon; aboutCli = value.aboutCli; aboutDate = value.aboutDate;
@@ -49,7 +52,7 @@ function init() {
 
                     siteImg.forEach(function (value, key) {
                         fig += "<a href='" + siteLink[key] + "'><figure><img src='" + value + "' alt=''><figcaption>" + siteTit[key] + "</figcaption></figure></a>";
-                    })
+                    });
 
                     reChange.forEach(function (value, key) {
                         reCh += "<span>" + value + "</span>";
@@ -57,7 +60,7 @@ function init() {
 
                     dsiColor.forEach(function (value, key) {
                         dsiCols += "<div style='background-color:" + value + "'><span>" + value + "</span></div>";
-                    })
+                    });
 
 
 
@@ -66,7 +69,7 @@ function init() {
                     //코드 삽입시작
                     conCode += "<div class='title'><div class='tit-wrap' ><div class='titTxt' style='background-color: " + titBg + ";'><div class='txtInner' ><h1>" + title + "</h1><p> " + titSub + "</p><a href='" + titLink + "' target='_blank'><span>Visit the website</span></a></div></div><div class='titImg'><img src = '" + titImg + "'></div></div></div>";
 
-                    conCode += "// <div class='linkIcon' style='background-color: " + titBg + ";'><div class='linkIconActive'>visit the website</div><div class='linkIconBasic'><img src='img/description/diagonal-arrow.svg'></div></div>";
+                    conCode += "// <div class='linkIcon' style='background-color: " + titBg + ";'><a href='" + titLink + "' target='_blank'><div class='linkIconActive'>visit the website</div><div class='linkIconBasic'><img src='img/description/diagonal-arrow.svg'></div></a></div>";
 
                     conCode += "<div class='content-wrap'>";
 
@@ -86,12 +89,18 @@ function init() {
                     conCode += "</div>";
 
                     conCode += "<div class='next wd100' style='background-color:" + nextColor + ";'><div><h4>up next</h4><h1>" + nextTit + "</h1><img src='" + nextImg + "' alt=''></div></div>";
-
-
                     contentArea.innerHTML = conCode;
-
                 });
 
+                //goback
+                let goBack = document.querySelector('.backHome');
+                goBack.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    myStorage.setItem('where',1);
+                    location.href='./index.html';
+                });
+
+                //tit/foot 전환
                 addEventListener("scroll", tfSwitch)
                 function tfSwitch(e) {
                     var body = document.querySelector('body');
@@ -109,11 +118,29 @@ function init() {
                         tit.style.display = "none";
                         nex.style.display = "block";
                     }
-                }; console.log(dsiCols)
-                // var nextDetail = document.querySelector('.next');
-                // nextDetail.addEventListener('click', function () {
-                //     pageChange(nextTit);
-                // });
+                };
+
+
+                //다음페이지 전환
+                var chanAni = document.querySelector('.chanAni');
+                var nextDetail = document.querySelector('.next');
+
+
+
+                nextDetail.addEventListener('click', function () {
+                    chanAni.classList.add('active');
+                    chanAni.style = "background-color:" + nextColor;
+                    setTimeout(() => {
+                        window.scrollTo(0, 0);
+                        pageChange(nextTit);
+
+                    }, 400);
+                    setTimeout(() => {
+                        chanAni.classList.remove('active');
+
+                    }, 1500);
+
+                });
 
             });
 

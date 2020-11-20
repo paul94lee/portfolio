@@ -15,123 +15,136 @@ window.addEventListener('DOMContentLoaded', function () {
     var front = document.querySelector('.front');
     var second = document.querySelector('.second');
 
-    var titArr = ['react Web', 'animations', 'UZEN', 'soodam', 'liability'];
+
+    var titArr = ['react', 'animations', 'UZEN', 'soodam', 'liability'];
     var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/UZENvisual.jpg'];
 
     var introArr = ['안녕하세요 ', '제 ', '이름은 ', '이재욱 ', '입니다.', '포트폴리오를 ', '보려고 ', '들어오셨죠?', '이제', '곧 ', '보실 수 ', '있습니다.', '3', '2', '1'];
-    intro.classList.add('active');
-    start1(0, 600)
-    function start1(counter, time) {
-        if (counter < introArr.length) {
-            setTimeout(function () {
-                switch (introArr[counter]) {
-                    case '안녕하세요 ':
-                        time = 250;
-                        front.style = 'font-size:80px                ';
-                        front.textContent = introArr[counter];
 
-                        break;
+    if (localStorage.where != 1) {
+        intro.classList.add('active');
+        start1(0, 600)
+        function start1(counter, time) {
+            if (counter < introArr.length) {
+                setTimeout(function () {
+                    switch (introArr[counter]) {
+                        case '안녕하세요 ':
+                            time = 250;
+                            front.style = 'font-size:80px                ';
+                            front.textContent = introArr[counter];
 
-                    case '이름은 ':
-                        second.style = 'font-size:40px';
-                        second.textContent += introArr[counter];
-                        break;
-                    case '이재욱 ':
-                        time = 400;
+                            break;
 
-                        second.textContent = '';
-                        intro.style.background = "#fff";
+                        case '이름은 ':
+                            second.style = 'font-size:40px';
+                            second.textContent += introArr[counter];
+                            break;
+                        case '이재욱 ':
+                            time = 400;
 
-                        front.style = 'font-size:150px;color:#000;transition:.2s;';
-                        for (var i = 0; i < introArr[counter].length; i++) {
+                            second.textContent = '';
+                            intro.style.background = "#fff";
 
-                            front.textContent = introArr[counter]; introArr[counter][i];
+                            front.style = 'font-size:150px;color:#000;transition:.2s;';
+                            for (var i = 0; i < introArr[counter].length; i++) {
+
+                                front.textContent = introArr[counter]; introArr[counter][i];
 
 
-                        }
-                        break;
-                    case '입니다.':
+                            }
+                            break;
+                        case '입니다.':
 
-                        second.style = 'display:block;font-size:50px;color:#000;    vertical-align:baseline;transition:.2s;';
-                        second.textContent = introArr[counter];
-                        break;
+                            second.style = 'display:block;font-size:50px;color:#000;    vertical-align:baseline;transition:.2s;';
+                            second.textContent = introArr[counter];
+                            break;
 
-                    case '제 ': time = 250;
-                        second.textContent = '';
-                        intro.style.background = "#000";
-                        front.style = 'font-size:40px;color:#fff; transition:.1s;';
-                        second.style = 'font-size:40px;color:#fff;vertical-align: middle;';
-                        front.textContent = introArr[counter];
-                        break;
-                    case '포트폴리오를 ':
-                        time = 250;
-                        second.textContent = '';
-                        intro.style.background = "#000";
-                        front.textContent = '';
-                        second.style = 'display:inline-block;font-size:40px;color:#fff;vertical-align: middle;';
-                        front.style = 'font-size:40px';
-                        second.textContent = introArr[counter];
-                        break;
-                    case '보려고 ':
-                        front.style = 'font-size:40px';
-                        second.textContent += introArr[counter];
+                        case '제 ': time = 250;
+                            second.textContent = '';
+                            intro.style.background = "#000";
+                            front.style = 'font-size:40px;color:#fff; transition:.1s;';
+                            second.style = 'font-size:40px;color:#fff;vertical-align: middle;';
+                            front.textContent = introArr[counter];
+                            break;
+                        case '포트폴리오를 ':
+                            time = 250;
+                            second.textContent = '';
+                            intro.style.background = "#000";
+                            front.textContent = '';
+                            second.style = 'display:inline-block;font-size:40px;color:#fff;vertical-align: middle;';
+                            front.style = 'font-size:40px';
+                            second.textContent = introArr[counter];
+                            break;
+                        case '보려고 ':
+                            front.style = 'font-size:40px';
+                            second.textContent += introArr[counter];
 
-                        break;
+                            break;
 
-                    case '이제 ':
-                        second.textContent = '';
-                        intro.style.background = "#000";
-                        front.style = 'font-size:40px;color:#fff;transition:.2s;';
-                        second.style = 'font-size:40px;color:#fff;';
-                        front.textContent = introArr[counter];
-                        break;
-                    case '곧 ':
-                        front.style = 'font-size:40px';
-                        second.textContent += introArr[counter];
-                        break;
-                    case '보실 수 ':
-                        front.style = 'font-size:40px';
-                        second.textContent += introArr[counter];
-                        break;
+                        case '이제 ':
+                            second.textContent = '';
+                            intro.style.background = "#000";
+                            front.style = 'font-size:40px;color:#fff;transition:.2s;';
+                            second.style = 'font-size:40px;color:#fff;';
+                            front.textContent = introArr[counter];
+                            break;
+                        case '곧 ':
+                            front.style = 'font-size:40px';
+                            second.textContent += introArr[counter];
+                            break;
+                        case '보실 수 ':
+                            front.style = 'font-size:40px';
+                            second.textContent += introArr[counter];
+                            break;
 
-                    case '1':
-                    case '3':
-                        time = 600;
-                        second.textContent = '';
-                        front.style = 'font-size:0px;color:#fff; transform: scale(2);';
-                        front.textContent = introArr[counter];
-                        intro.style.background = "#000";
-                        front.classList.add('count');
-                        break;
-                    case '2':
-                        time = 600;
-                        front.classList.remove('count');
-                        front.textContent = '';
-                        second.textContent = introArr[counter];
+                        case '1':
+                        case '3':
+                            time = 600;
+                            second.textContent = '';
+                            front.style = 'font-size:0px;color:#fff; transform: scale(2);';
+                            front.textContent = introArr[counter];
+                            intro.style.background = "#000";
+                            front.classList.add('count');
+                            break;
+                        case '2':
+                            time = 600;
+                            front.classList.remove('count');
+                            front.textContent = '';
+                            second.textContent = introArr[counter];
 
-                        second.style = 'font-size:1000px; color:#000;transform: scale(2);';
+                            second.style = 'font-size:1000px; color:#000;transform: scale(2);';
 
-                        intro.style.background = "#fff";
-                        second.classList.add('count');
-                        break;
+                            intro.style.background = "#fff";
+                            second.classList.add('count');
+                            break;
 
-                    default:
-                        intro.style.background = "#000";
-                        front.style = 'font-size:40px;color:#fff; transition: 0s;';
-                        front.textContent = introArr[counter];
-                        second.textContent = '';
-                }
-                counter++;
-                start1(counter, time);
-            }, time);
+                        default:
+                            intro.style.background = "#000";
+                            front.style = 'font-size:40px;color:#fff; transition: 0s;';
+                            front.textContent = introArr[counter];
+                            second.textContent = '';
+                    }
+                    counter++;
+                    start1(counter, time);
+                }, time);
+            }
         }
-    }
 
-    setTimeout(() => {
-        intro.classList.remove('active');
+        setTimeout(() => {
+            intro.classList.remove('active');
+            main.classList.add('active');
+            change();
+        }, 6300);
+
+    }
+    else {
         main.classList.add('active');
         change();
-    }, 6300);
+    }
+
+
+
+
 
     //컨텐츠 전환
     function change() {
@@ -332,7 +345,15 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     titImg.addEventListener('click', function () {
-        console.log('click');
-    })
 
+        var go = titArr[2];
+        console.log(go)
+        setTimeout(() => {
+
+
+            localStorage.setItem('pageName', go);
+            location.href = 'description.html';
+        }, 500);
+    });
+    localStorage.setItem('where', 0);
 });

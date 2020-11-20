@@ -18,4 +18,11 @@ function init() {
             nex.style.display = "block";
         }
     };
+    let goBack = document.querySelector('.backHome');
+    var myStorage = window.localStorage;
+    goBack.addEventListener('click', function (e) {
+        e.preventDefault();
+        myStorage.setItem('where', 1);
+        location.href = './index.html';
+    });
 };

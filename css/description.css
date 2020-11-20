@@ -481,4 +481,66 @@ body .next img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
+
+body .chanAni {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  -webkit-transition: -webkit-transform opacity 2s;
+  transition: -webkit-transform opacity 2s;
+  transition: transform opacity 2s;
+  transition: transform opacity 2s, -webkit-transform opacity 2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+body .chanAni.active {
+  -webkit-animation: pageAni 1.5s linear;
+          animation: pageAni 1.5s linear;
+}
+
+@-webkit-keyframes pageAni {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  20% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  60% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+}
+
+@keyframes pageAni {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  20% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  60% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+}
 /*# sourceMappingURL=description.css.map */

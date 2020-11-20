@@ -93,6 +93,7 @@ body {
         .imgList {
             width: 100vw;
             overflow: hidden;
+
             .move {
                 width: 100%;
                 position: relative;
@@ -139,6 +140,7 @@ body {
 
         .list {
             position: absolute;
+            z-index: -1;
             height: 700px;
             width: 1500px;
             left: 50%;

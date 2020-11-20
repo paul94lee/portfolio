@@ -187,6 +187,7 @@ body .main .imgList .move li:nth-of-type(5) {
 
 body .main .list {
   position: absolute;
+  z-index: -1;
   height: 700px;
   width: 1500px;
   left: 50%;

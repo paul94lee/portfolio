@@ -407,4 +407,32 @@ body {
             filter: grayscale(1);
         }
     }
+    .chanAni {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        transition: transform opacity 2s;
+        transform: translateY(100%);
+    }
+    .chanAni.active {
+        animation: pageAni 1.5s linear;
+        @keyframes pageAni {
+            0% {
+                transform: translateY(100%);
+            }
+            20% {
+                transform: translateY(0%);
+            }
+            60% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(0%);
+                transform: translateX(-70%);
+            }
+        }
+    }
 }

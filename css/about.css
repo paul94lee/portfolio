@@ -164,6 +164,12 @@ body .title .titTex div h2 {
   font-family: "Playfair Display";
 }
 
+body .title .titTex div p {
+  font-weight: 200;
+  font-size: 18px;
+  color: #fff;
+}
+
 body .title .titImg {
   position: relative;
   width: 40%;
