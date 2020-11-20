@@ -14,13 +14,14 @@ window.addEventListener('DOMContentLoaded', function () {
     var main = document.querySelector('.main');
     var front = document.querySelector('.front');
     var second = document.querySelector('.second');
-
+    var navs = document.querySelectorAll('.nav ul li');
 
     var titArr = ['react', 'animations', 'UZEN', 'soodam', 'liability'];
     var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/UZENvisual.jpg'];
 
     var introArr = ['안녕하세요 ', '제 ', '이름은 ', '이재욱 ', '입니다.', '포트폴리오를 ', '보려고 ', '들어오셨죠?', '이제', '곧 ', '보실 수 ', '있습니다.', '3', '2', '1'];
 
+    //인트로 여부 및 실행
     if (localStorage.where != 1) {
         intro.classList.add('active');
         start1(0, 600)
@@ -141,11 +142,6 @@ window.addEventListener('DOMContentLoaded', function () {
         main.classList.add('active');
         change();
     }
-
-
-
-
-
     //컨텐츠 전환
     function change() {
         startSpin(0);
@@ -356,4 +352,20 @@ window.addEventListener('DOMContentLoaded', function () {
         }, 500);
     });
     localStorage.setItem('where', 0);
+
+    var forNavArr = ['about.html#pro', 'about.html#award'];
+    navs.forEach(function (value, key) {
+        value.addEventListener('click', function () {
+            console.log()
+
+            if (key < 2) {
+                location.href = forNavArr[key];
+                localStorage.removeItem('go');
+            }
+            else if (key === 2) {
+                localStorage.setItem('go', 'contact')
+                location.href = 'about.html#pro';
+            }
+        })
+    });
 });

@@ -426,6 +426,7 @@ body .content-wrap .awards .eachAward .awardDetail {
 }
 
 body .content-wrap .awards .eachAward .awardDetail p {
+  margin-right: 100px;
   color: #000;
   line-height: 50px;
   font-size: 50px;
@@ -451,15 +452,5 @@ body .content-wrap .awards .eachAward:nth-of-type(3) {
 
 body .content-wrap .awards .eachAward:nth-of-type(4) {
   background-color: #ffffff;
-}
-
-body .content-wrap .awards .goRight {
-  -webkit-transform: translate(-10%, 0) rotate(3deg);
-          transform: translate(-10%, 0) rotate(3deg);
-}
-
-body .content-wrap .awards .goLeft {
-  -webkit-transform: translate(-10%, 0) rotate(-3deg);
-          transform: translate(-10%, 0) rotate(-3deg);
 }
 /*# sourceMappingURL=about.css.map */

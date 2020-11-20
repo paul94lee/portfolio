@@ -2,7 +2,7 @@ window.addEventListener("load", init);
 
 function init() {
     var myStorage = window.localStorage;
-    console.log(myStorage.pageName)
+    
     pageChange(myStorage.pageName)
 
     function pageChange(classy) {
@@ -13,6 +13,7 @@ function init() {
             .then(response => response.json()
             )
             .then(json => {
+                
                 var conCode = '';
                 let title, titSub, titLink, titImg, titBg, aboutTit, aboutCon, aboutCli, aboutDate, vdoLink, vdoCon, issue, solve, siteImg, siteLink, siteTit, reChange, dsiConcept, dsiCon, typoImg, dsiColor, nextTit, nextImg, nextColor;
                 let iss = '';
@@ -38,7 +39,7 @@ function init() {
                     dsiConcept = value.dsiConcept; dsiCon = value.dsiCon; typoImg = value.typoImg; dsiColor = value.dsiColor;
 
                     nextTit = value.nextTit; nextImg = value.nextImg; nextColor = value.nextColor;
-
+                    console.log(nextTit)
 
                     //배열 관리
 

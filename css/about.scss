@@ -301,6 +301,7 @@ body {
                     justify-content: space-between;
                     padding: 100px 0;
                     p {
+                        margin-right: 100px;
                         color: #000;
                         line-height: 50px;
                         font-size: 50px;
@@ -323,12 +324,6 @@ body {
             }
             .eachAward:nth-of-type(4) {
                 background-color: #ffffff;
-            }
-            .goRight {
-                transform: translate(-10%, 0) rotate(3deg);
-            }
-            .goLeft {
-                transform: translate(-10%, 0) rotate(-3deg);
             }
         }
     }
