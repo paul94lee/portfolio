@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Playfair+Display:wght@400;500;900&family=Prata&family=Rozha+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @font-face {
     font-family: "Le_Murmure-Regular";
     src: url("../font/murmure/fonts/webfonts/Le_Murmure-Regular_web.eot");
@@ -57,7 +58,7 @@ a {
 }
 
 .chanAni.goUp {
-    animation: goUp 1s linear forwards;
+    animation: goUp 0.5s linear forwards;
 }
 @keyframes goUp {
     0% {
@@ -72,7 +73,7 @@ a {
     }
 }
 .chanAni.goLeft {
-    animation: goLeft 1s linear forwards;
+    animation: goLeft 0.5s linear forwards;
 }
 @keyframes goLeft {
     0% {
@@ -86,7 +87,7 @@ a {
     }
 }
 .chanAni.goRight {
-    animation: goRight 1s linear forwards;
+    animation: goRight 0.5s linear forwards;
 }
 @keyframes goRight {
     0% {

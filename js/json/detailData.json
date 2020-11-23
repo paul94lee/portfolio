@@ -72,7 +72,7 @@
                 "javascript",
                 "JQuery"
             ],
-            "vdoLink": "img/liability-cover.jpg",
+            "vdoLink": "img/soodam-cover.jpg",
             "vdoCon": "soodam 제작 페이지 소개",
             "issue": [
                 "aaa",
@@ -87,9 +87,9 @@
                 "444"
             ],
             "siteImg": [
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg"
+                "img/soodam-cover.jpg",
+                "img/soodam-cover.jpg",
+                "img/soodam-cover.jpg"
             ],
             "siteLink": [
                 "https://paul94lee.github.io/soodam/",
@@ -108,7 +108,7 @@
             ],
             "dsiConcept": "Art Direction that match the concept",
             "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
-            "typoImg": "img/liability-cover.jpg",
+            "typoImg": "img/soodam-cover.jpg",
             "dsiColor": [
                 "#d74545",
                 "#ffffff",
@@ -149,12 +149,12 @@
                 "444"
             ],
             "siteImg": [
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg"
+                "img/uzen-cover.jpg",
+                "img/uzen-cover.jpg",
+                "img/uzen-cover.jpg",
+                "img/uzen-cover.jpg",
+                "img/uzen-cover.jpg",
+                "img/uzen-cover.jpg"
             ],
             "siteLink": [
                 "https://paul94lee.github.io/UZEN/",

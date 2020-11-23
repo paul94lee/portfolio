@@ -154,58 +154,18 @@ body {
             bottom: 8%;
             width: 12%;
             transform: translateX(-50%);
-            ul {
+            p {
+                text-transform: uppercase;
+                
+                font-family: 'Arimo', sans-serif;
                 width: 100%;
-                display: flex;
-                justify-content: space-around;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            p:hover {
 
-                li {
-                    position: relative;
-                    width: 15%;
-                    overflow: hidden;
-                    svg {
-                        fill: #1f1f1f;
-                    }
-                }
-
-                li:hover {
-                    overflow: visible;
-                    svg {
-                        transition: 0.1s;
-                        fill: #fff;
-                        transform: scale(1.1);
-                    }
-                }
-                .profile:before {
-                    width: 100%;
-                    text-align: center;
-                    font-size: 10px;
-                    content: "profile";
-                    position: absolute;
-                    bottom: 110%;
-                    left: 0;
-                    color: #fff;
-                }
-                .awards:before {
-                    width: 100%;
-                    text-align: center;
-                    font-size: 10px;
-                    content: "awards";
-                    position: absolute;
-                    bottom: 110%;
-                    left: 0;
-                    color: #fff;
-                }
-                .contact:before {
-                    width: 100%;
-                    text-align: center;
-                    font-size: 10px;
-                    content: "contact";
-                    position: absolute;
-                    bottom: 110%;
-                    left: 0;
-                    color: #fff;
-                }
+                color: rgba(255, 255, 255, 0.5);
             }
         }
     }

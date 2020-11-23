@@ -205,67 +205,16 @@ body .main .nav {
           transform: translateX(-50%);
 }
 
-body .main .nav ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body .main .nav ul li {
-  position: relative;
-  width: 15%;
-  overflow: hidden;
-}
-
-body .main .nav ul li svg {
-  fill: #1f1f1f;
-}
-
-body .main .nav ul li:hover {
-  overflow: visible;
-}
-
-body .main .nav ul li:hover svg {
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  fill: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-body .main .nav ul .profile:before {
+body .main .nav p {
+  text-transform: uppercase;
+  font-family: 'Arimo', sans-serif;
   width: 100%;
   text-align: center;
-  font-size: 10px;
-  content: "profile";
-  position: absolute;
-  bottom: 110%;
-  left: 0;
-  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-body .main .nav ul .awards:before {
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  content: "awards";
-  position: absolute;
-  bottom: 110%;
-  left: 0;
-  color: #fff;
-}
-
-body .main .nav ul .contact:before {
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  content: "contact";
-  position: absolute;
-  bottom: 110%;
-  left: 0;
-  color: #fff;
+body .main .nav p:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=index.css.map */

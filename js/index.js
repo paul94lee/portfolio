@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var main = document.querySelector('.main');
     var front = document.querySelector('.front');
     var second = document.querySelector('.second');
-    var navs = document.querySelectorAll('.nav ul li');
+    var nav = document.querySelector('.nav p');
 
     var titArr = ['react', 'animations', 'UZEN', 'soodam', 'liability'];
     var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/UZENvisual.jpg'];
@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
         function mouseUp(e) {
-           
+
             bln = false;
             if (num > 265) {
                 for (var n = num; n < 530; n += 30) {
@@ -214,7 +214,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             }, 150);
             titImg.classList.add('active');
-            
+
         }
         function mouseCalStart(e) {
             dragClick = true;
@@ -262,7 +262,7 @@ window.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('mousedown', mouseCalStart);
         window.addEventListener('mouseup', mouseUp);
         window.addEventListener('mousemove', function (e) {
-           
+
             dragClick = false;
 
             if (bln) {
@@ -352,7 +352,7 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     titImg.addEventListener('click', function (e) {
-        if(!dragClick) return;
+        if (!dragClick) return;
         var go = titArr[2];
         var chanAni = document.querySelector('.chanAni');
         var pageColor = {
@@ -374,25 +374,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-    navs.forEach(function (value, key) {
+    nav.addEventListener('click', function () {
 
-        value.addEventListener('click', function () {
+        var chanAni = document.querySelector('.chanAni');
+        chanAni.style = 'background-color:#282828;';
 
-            var chanAni = document.querySelector('.chanAni');
-            chanAni.style = 'background-color:#282828;';
+        goUp();
+        setTimeout(() => {
+            location.href = 'about.html';
+        }, 1000);
 
-            goUp();
-            setTimeout(() => {
-                if (key < 2) {
-                    location.href = forNavArr[key];
-                    localStorage.removeItem('go');
-                }
-                else if (key === 2) {
-                    localStorage.setItem('go', 'contact')
-                    location.href = 'about.html#pro';
-                }
-            }, 1000);
-
-        })
     });
 });
