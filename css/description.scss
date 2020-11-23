@@ -286,19 +286,25 @@ body {
                 .site-wrap {
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
-                    // flex-wrap: wrap;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    
                     a {
                         background-color: #fff;
-                        width: 30%;
+                        width: 20%;
                         border-radius: 20px;
                         margin: 0 5%;
                         margin-bottom: 5%;
+
+                        
                         figure {
                             width: 100%;
-
+                            background-color: #fdfdfd;
+                            box-shadow: 3px 3px 2px #ccc;
+                            border-radius: 20px;
                             img {
-                                border-radius: 20px;
+                                border-radius: 20px 20px 0 0;
                                 width: 100%;
                                 height: auto;
                             }
@@ -306,6 +312,7 @@ body {
                                 text-align: center;
                                 padding: 20px 0;
                                 width: 100%;
+                                ;
                             }
                         }
                     }
@@ -368,6 +375,7 @@ body {
     }
     .next {
         display: none;
+        background-color: #f00;
         width: 100vw;
         height: 100vh;
         color: #fff;

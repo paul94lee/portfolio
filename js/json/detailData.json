@@ -14,7 +14,7 @@
                 "HTML/CSS",
                 "javascript"
             ],
-            "vdoLink": "vdo/liability_vdo.mp4",
+            "vdoLink": "vdo/liability-video.mp4",
             "vdoCon": "liability 가사 페이지",
             "issue": [
                 "aaa",
@@ -29,13 +29,9 @@
                 "444"
             ],
             "siteImg": [
-                "img/liability-cover.jpg",
-                "img/liability-cover.jpg",
                 "img/liability-cover.jpg"
             ],
             "siteLink": [
-                "https://paul94lee.github.io/liability/",
-                "https://paul94lee.github.io/liability/",
                 "https://paul94lee.github.io/liability/"
             ],
             "siteTit": [
@@ -50,10 +46,10 @@
             "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
             "typoImg": "img/liability-cover.jpg",
             "dsiColor": [
-                "#f1f1f1",
+                "#e6e6e3",
+                "#000000",
                 "#ffffff",
-                "#f00ef1",
-                "#f1f1f1"
+                "#aaaaaa"
             ],
             "nextTit": "soodam",
             "nextImg": "img/soodam-cover.jpg",
@@ -70,13 +66,14 @@
             "aboutTit": "soodam은 blah blah ~~ soodam은 blah blah ~~",
             "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
             "aboutCli": "Self-Initiated",
-            "aboutDate": "20-10-11 ~ 20-10-30",
+            "aboutDate": "20-08-10 ~ 20-9-10",
             "aboutLang": [
                 "HTML/CSS",
-                "javascript"
+                "javascript",
+                "JQuery"
             ],
             "vdoLink": "img/liability-cover.jpg",
-            "vdoCon": "liability 가사 페이지",
+            "vdoCon": "soodam 제작 페이지 소개",
             "issue": [
                 "aaa",
                 "bbb",
@@ -95,14 +92,14 @@
                 "img/liability-cover.jpg"
             ],
             "siteLink": [
-                "https://paul94lee.github.io/liability/",
-                "https://paul94lee.github.io/liability/",
-                "https://paul94lee.github.io/liability/"
+                "https://paul94lee.github.io/soodam/",
+                "https://paul94lee.github.io/soodam/user-class-detail.html",
+                "https://paul94lee.github.io/soodam/teacher-cafe-detail.html"
             ],
             "siteTit": [
                 "메인페이지",
-                "메인페이지",
-                "메인페이지"
+                "클래스 상세페이지",
+                "카페 상세페이지"
             ],
             "reChange": [
                 "435px",
@@ -113,10 +110,9 @@
             "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
             "typoImg": "img/liability-cover.jpg",
             "dsiColor": [
-                "#f1f1f1",
+                "#d74545",
                 "#ffffff",
-                "#f00ef1",
-                "#f1f1f1"
+                "#555555"
             ],
             "nextTit": "UZEN",
             "nextImg": "img/uzen-cover.jpg",
@@ -133,13 +129,13 @@
             "aboutTit": "UZEN는 blah blah ~~ UZEN은 blah blah ~~",
             "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
             "aboutCli": "Self-Initiated",
-            "aboutDate": "20-10-11 ~ 20-10-30",
+            "aboutDate": "20-10-05 ~ 20-10-11",
             "aboutLang": [
                 "HTML/CSS",
                 "javascript"
             ],
-            "vdoLink": "img/liability-cover.jpg",
-            "vdoCon": "liability 가사 페이지",
+            "vdoLink": "vdo/uzen-video.mp4",
+            "vdoCon": "UZEN 페이지 소개",
             "issue": [
                 "aaa",
                 "bbb",
@@ -155,17 +151,27 @@
             "siteImg": [
                 "img/liability-cover.jpg",
                 "img/liability-cover.jpg",
+                "img/liability-cover.jpg",
+                "img/liability-cover.jpg",
+                "img/liability-cover.jpg",
                 "img/liability-cover.jpg"
             ],
             "siteLink": [
-                "https://paul94lee.github.io/liability/",
-                "https://paul94lee.github.io/liability/",
-                "https://paul94lee.github.io/liability/"
+                "https://paul94lee.github.io/UZEN/",
+                "https://paul94lee.github.io/UZEN/aboutus.html",
+                "https://paul94lee.github.io/UZEN/product.html",
+                "https://paul94lee.github.io/UZEN/works.html",
+                "https://paul94lee.github.io/UZEN/contact.html",
+                "https://paul94lee.github.io/UZEN/culture.html",
+                "https://paul94lee.github.io/UZEN/career.html"
             ],
             "siteTit": [
                 "메인페이지",
-                "메인페이지",
-                "메인페이지"
+                "About us",
+                "Product",
+                "Works",
+                "Contact",
+                "Culture"
             ],
             "reChange": [
                 "435px",
@@ -176,10 +182,9 @@
             "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
             "typoImg": "img/liability-cover.jpg",
             "dsiColor": [
-                "#f1f1f1",
+                "#fa5400",
                 "#ffffff",
-                "#f00ef1",
-                "#f1f1f1"
+                "#000000"
             ],
             "nextTit": "liability",
             "nextImg": "img/liability-cover.jpg",

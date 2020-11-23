@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var forNavArr = ['about.html#pro', 'about.html#award'];
 
-    var dragClick = 0;
+    var dragClick = true;
     //인트로 여부 및 실행
     if (localStorage.where != 1) {
         intro.classList.add('active');
@@ -171,7 +171,8 @@ window.addEventListener('DOMContentLoaded', function () {
                 spinCont++;
             }
         }
-        function mouseUp() {
+        function mouseUp(e) {
+           
             bln = false;
             if (num > 265) {
                 for (var n = num; n < 530; n += 30) {
@@ -213,13 +214,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
             }, 150);
             titImg.classList.add('active');
+            
         }
         function mouseCalStart(e) {
-            dragClick = 1;
+            dragClick = true;
             bln = true;
             titImg.classList.remove('active');
             x = e.clientX;
-
         }
         function wheel(e) {
 
@@ -261,6 +262,8 @@ window.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('mousedown', mouseCalStart);
         window.addEventListener('mouseup', mouseUp);
         window.addEventListener('mousemove', function (e) {
+           
+            dragClick = false;
 
             if (bln) {
                 target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
@@ -348,9 +351,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     };
 
-    titImg.addEventListener('click', function () {
-
-
+    titImg.addEventListener('click', function (e) {
+        if(!dragClick) return;
         var go = titArr[2];
         var chanAni = document.querySelector('.chanAni');
         var pageColor = {
@@ -358,7 +360,7 @@ window.addEventListener('DOMContentLoaded', function () {
             liability: '#000',
             soodam: '#d74545'
         };
-        console.log(go)
+        console.log(3333)
         chanAni.style = 'background-color:' + pageColor[go] + ';';
 
         goUp();

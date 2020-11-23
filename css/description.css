@@ -333,14 +333,15 @@ body .change .content-wrap .site-map .site-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .change .content-wrap .site-map .site-wrap a {
   background-color: #fff;
-  width: 30%;
+  width: 20%;
   border-radius: 20px;
   margin: 0 5%;
   margin-bottom: 5%;
@@ -348,10 +349,14 @@ body .change .content-wrap .site-map .site-wrap a {
 
 body .change .content-wrap .site-map .site-wrap a figure {
   width: 100%;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 3px 3px 2px #ccc;
+          box-shadow: 3px 3px 2px #ccc;
+  border-radius: 20px;
 }
 
 body .change .content-wrap .site-map .site-wrap a figure img {
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   width: 100%;
   height: auto;
 }
@@ -428,6 +433,7 @@ body .change .content-wrap .visual .visCon .colors div span {
 
 body .next {
   display: none;
+  background-color: #f00;
   width: 100vw;
   height: 100vh;
   color: #fff;

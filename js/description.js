@@ -67,7 +67,7 @@ function init() {
 
 
                     siteImg.forEach(function (value, key) {
-                        fig += "<a href='" + siteLink[key] + "'><figure><img src='" + value + "' alt=''><figcaption>" + siteTit[key] + "</figcaption></figure></a>";
+                        fig += "<a href='" + siteLink[key] + "' target='_blank'><figure><img src='" + value + "' alt=''><figcaption>" + siteTit[key] + "</figcaption></figure></a>";
                     });
 
                     reChange.forEach(function (value, key) {

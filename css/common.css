@@ -57,7 +57,7 @@ a {
 }
 
 .chanAni.goUp {
-    animation: goUp 1s linear;
+    animation: goUp 1s linear forwards;
 }
 @keyframes goUp {
     0% {
@@ -72,7 +72,7 @@ a {
     }
 }
 .chanAni.goLeft {
-    animation: goLeft 1s linear;
+    animation: goLeft 1s linear forwards;
 }
 @keyframes goLeft {
     0% {
@@ -86,7 +86,7 @@ a {
     }
 }
 .chanAni.goRight {
-    animation: goRight 1s linear;
+    animation: goRight 1s linear forwards;
 }
 @keyframes goRight {
     0% {
