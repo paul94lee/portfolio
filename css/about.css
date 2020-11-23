@@ -134,6 +134,7 @@ body .title {
 }
 
 body .title .titTex {
+  padding-top: 100px;
   position: relative;
   width: 60%;
   background-color: #282828;
@@ -207,6 +208,10 @@ body .content-wrap {
 body .content-wrap > * {
   margin-left: auto;
   margin-right: auto;
+}
+
+body .content-wrap .titText {
+  padding-top: 100px;
 }
 
 body .content-wrap .horizHobby {

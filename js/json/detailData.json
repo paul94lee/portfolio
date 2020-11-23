@@ -2,15 +2,19 @@
     "liability": [
         {
             "title": "Liability",
-            "titSub": "전 연인에 대한 상실감과 인간관계에서 느끼는 결핍을 표현한다.",
+            "titSub": "전 연인에 대한 상실감과 인간관계에서 느끼는 결핍을 표현하는 곡",
             "titLink": "https://paul94lee.github.io/liability/",
             "titImg": "img/liability-cover.jpg",
             "titBg": "#000",
-            "aboutTit": "Liability는 blah blah ~~ Liability는 blah blah ~~",
-            "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
+            "aboutTit": "Liability 가사 사이트",
+            "aboutCon": "ㄹㄹㄹㄹㄹㄹㄹㄹ",
             "aboutCli": "Self-Initiated",
             "aboutDate": "20-10-11 ~ 20-10-30",
-            "vdoLink": "img/liability-cover.jpg",
+            "aboutLang": [
+                "HTML/CSS",
+                "javascript"
+            ],
+            "vdoLink": "vdo/liability_vdo.mp4",
             "vdoCon": "liability 가사 페이지",
             "issue": [
                 "aaa",
@@ -35,8 +39,6 @@
                 "https://paul94lee.github.io/liability/"
             ],
             "siteTit": [
-                "메인페이지",
-                "메인페이지",
                 "메인페이지"
             ],
             "reChange": [
@@ -54,7 +56,7 @@
                 "#f1f1f1"
             ],
             "nextTit": "soodam",
-            "nextImg": "img/description/class08.jpg",
+            "nextImg": "img/soodam-cover.jpg",
             "nextColor": "#d74545"
         }
     ],
@@ -63,12 +65,16 @@
             "title": "soodam",
             "titSub": "soodamsoodamsoodamsoodamsoodamsoodamsoodam",
             "titLink": "https://paul94lee.github.io/soodam/",
-            "titImg": "img/liability-cover.jpg",
+            "titImg": "img/soodam-cover.jpg",
             "titBg": "#d74545",
             "aboutTit": "soodam은 blah blah ~~ soodam은 blah blah ~~",
             "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
             "aboutCli": "Self-Initiated",
             "aboutDate": "20-10-11 ~ 20-10-30",
+            "aboutLang": [
+                "HTML/CSS",
+                "javascript"
+            ],
             "vdoLink": "img/liability-cover.jpg",
             "vdoCon": "liability 가사 페이지",
             "issue": [
@@ -113,8 +119,8 @@
                 "#f1f1f1"
             ],
             "nextTit": "UZEN",
-            "nextImg": "img/description/class08.jpg",
-            "nextColor": "orange"
+            "nextImg": "img/uzen-cover.jpg",
+            "nextColor": "#fa5400"
         }
     ],
     "UZEN": [
@@ -122,12 +128,16 @@
             "title": "UZEN",
             "titSub": "유젠 사이트 리뉴얼",
             "titLink": "https://paul94lee.github.io/UZEN/",
-            "titImg": "img/liability-cover.jpg",
-            "titBg": "orange",
+            "titImg": "img/uzen-cover.jpg",
+            "titBg": "#fa5400",
             "aboutTit": "UZEN는 blah blah ~~ UZEN은 blah blah ~~",
             "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
             "aboutCli": "Self-Initiated",
             "aboutDate": "20-10-11 ~ 20-10-30",
+            "aboutLang": [
+                "HTML/CSS",
+                "javascript"
+            ],
             "vdoLink": "img/liability-cover.jpg",
             "vdoCon": "liability 가사 페이지",
             "issue": [
@@ -172,7 +182,7 @@
                 "#f1f1f1"
             ],
             "nextTit": "liability",
-            "nextImg": "img/description/class08.jpg",
+            "nextImg": "img/liability-cover.jpg",
             "nextColor": "#000"
         }
     ]

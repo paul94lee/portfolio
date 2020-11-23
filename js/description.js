@@ -6,14 +6,14 @@ function init() {
     pageChange(myStorage.pageName)
     var chanAni = document.querySelector('.chanAni');
     var pageColor = {
-        UZEN: 'orange',
+        UZEN: '#fa5400',
         liability: '#000',
         soodam: '#d74545'
     };
 
     var pageName = myStorage.pageName;
     chanAni.style = 'background-color:' + pageColor[pageName] + ';';
-    
+
     goLeft();
 
     function pageChange(classy) {
@@ -26,18 +26,19 @@ function init() {
             .then(json => {
 
                 var conCode = '';
-                let title, titSub, titLink, titImg, titBg, aboutTit, aboutCon, aboutCli, aboutDate, vdoLink, vdoCon, issue, solve, siteImg, siteLink, siteTit, reChange, dsiConcept, dsiCon, typoImg, dsiColor, nextTit, nextImg, nextColor;
+                let title, titSub, titLink, titImg, titBg, aboutTit, aboutCon, aboutCli, aboutDate, vdoLink, vdoCon, issue, solve, siteImg, siteLink, siteTit, reChange, dsiConcept, dsiCon, typoImg, dsiColor, nextTit, nextImg, nextColor, aboutLang;
                 let iss = '';
                 let sol = '';
                 let fig = '';
                 let reCh = '';
                 let dsiCols = '';
+                let Lang = '';
                 var contentArea = document.querySelector('.change');
 
                 json[classy].forEach(function (value, key) {//내용변경
                     title = value.title; titSub = value.titSub; titLink = value.titLink; titImg = value.titImg; titBg = value.titBg;
 
-                    aboutTit = value.aboutTit; aboutCon = value.aboutCon; aboutCli = value.aboutCli; aboutDate = value.aboutDate;
+                    aboutTit = value.aboutTit; aboutCon = value.aboutCon; aboutCli = value.aboutCli; aboutDate = value.aboutDate; aboutLang = value.aboutLang;
 
                     vdoLink = value.vdoLink; vdoCon = value.vdoCon;
 
@@ -54,6 +55,9 @@ function init() {
 
                     //배열 관리
 
+                    aboutLang.forEach(function (value, key) {
+                        Lang += "<p>" + value + "</p>"
+                    });
                     issue.forEach(function (value, key) {
                         iss += "<div>" + value + "</div>"
                     });
@@ -85,9 +89,9 @@ function init() {
 
                     conCode += "<div class='content-wrap'>";
 
-                    conCode += "<section class='about wd72'><h3> about project</h3><h2>" + aboutTit + "</h2><div><p>" + aboutCon + "</p><div class='myWork'><div><h4>CLIENT</h4><p>" + aboutCli + "</p></div><div><h4>DATE</h4><p>" + aboutDate + "</p></div></div></div></section> ";
+                    conCode += "<section class='about wd72'><h3> about project</h3><h2>" + aboutTit + "</h2><div><p>" + aboutCon + "</p><div class='myWork'><div><h4>CLIENT</h4><p>" + aboutCli + "</p></div><div><h4>DATE</h4><p>" + aboutDate + "</p></div><div><h4>LANGUAGE</h4><p>" + Lang + "</p></div></div></div></section> ";
 
-                    conCode += "<div class='vdo wd90'><video><source src=" + vdoLink + "></video><p><i>" + vdoCon + "</i></p></div>";
+                    conCode += "<div class='vdo wd90'><video autoplay muted loop><source src=" + vdoLink + "></video><p><i>" + vdoCon + "</i></p></div>";
 
                     conCode += "<section class='solve wd72'><h3> 1.</h3><h2>Solving problems</h2><div class='deform'><p>이곳은 문제해결 설명란입니다.</p><p>코딩하면서 여러가지 문제점에 도달했는데 이를 해결하기 위해 시도했거나 개선한 점을 기술한다.</p></div><div class='solveProcess'><div><h4>발생 문제</h4><div>" + iss + "</div></div><div><h4>해결 방안</h4><div>" + sol + "</div></div></div></section>";
 

@@ -155,6 +155,7 @@ body .change .title .tit-wrap .titImg {
 }
 
 body .change .title .tit-wrap .titImg img {
+  width: 100%;
   height: 100%;
   position: absolute;
   left: 50%;
@@ -297,13 +298,8 @@ body .change .content-wrap .about > div .myWork div h4 {
   margin-bottom: 20px;
 }
 
-body .change .content-wrap .vdo {
-  height: auto;
-}
-
 body .change .content-wrap .vdo video {
   width: 100%;
-  height: auto;
   background: #ccc;
 }
 

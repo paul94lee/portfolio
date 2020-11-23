@@ -21,6 +21,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var introArr = ['안녕하세요 ', '제 ', '이름은 ', '이재욱 ', '입니다.', '포트폴리오를 ', '보려고 ', '들어오셨죠?', '이제', '곧 ', '보실 수 ', '있습니다.', '3', '2', '1'];
 
+
+    var forNavArr = ['about.html#pro', 'about.html#award'];
+
+    var dragClick = 0;
     //인트로 여부 및 실행
     if (localStorage.where != 1) {
         intro.classList.add('active');
@@ -141,7 +145,10 @@ window.addEventListener('DOMContentLoaded', function () {
     else {
         main.classList.add('active');
         change();
+        localStorage.setItem('where', 0);
     }
+
+
     //컨텐츠 전환
     function change() {
         startSpin(0);
@@ -164,26 +171,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 spinCont++;
             }
         }
-
-        window.addEventListener('mousedown', mouseCalStart);
-        window.addEventListener('wheel', wheel)
-        window.addEventListener('mousemove', function (e) {
-
-            if (bln) {
-                target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
-                if (x < e.clientX) {
-                    rightRota();
-                    imgRightRota();
-                }
-                if (x > e.clientX) {
-                    imgleftRota();
-                    leftRota();
-                };
-                x = e.clientX;
-            }
-
-        });
-        window.addEventListener('mouseup', function () {
+        function mouseUp() {
             bln = false;
             if (num > 265) {
                 for (var n = num; n < 530; n += 30) {
@@ -225,13 +213,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
             }, 150);
             titImg.classList.add('active');
-        });
-
+        }
         function mouseCalStart(e) {
+            dragClick = 1;
             bln = true;
             titImg.classList.remove('active');
             x = e.clientX;
-
 
         }
         function wheel(e) {
@@ -271,6 +258,27 @@ window.addEventListener('DOMContentLoaded', function () {
                 }, 500);
             }
         };
+        window.addEventListener('mousedown', mouseCalStart);
+        window.addEventListener('mouseup', mouseUp);
+        window.addEventListener('mousemove', function (e) {
+
+            if (bln) {
+                target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
+                if (x < e.clientX) {
+                    rightRota();
+                    imgRightRota();
+                }
+                if (x > e.clientX) {
+                    imgleftRota();
+                    leftRota();
+                };
+                x = e.clientX;
+            }
+
+        });
+        window.addEventListener('wheel', wheel);
+
+
     };
     function leftRota() {
         num -= 30;
@@ -346,7 +354,7 @@ window.addEventListener('DOMContentLoaded', function () {
         var go = titArr[2];
         var chanAni = document.querySelector('.chanAni');
         var pageColor = {
-            UZEN: 'orange',
+            UZEN: '#fa5400',
             liability: '#000',
             soodam: '#d74545'
         };
@@ -360,9 +368,10 @@ window.addEventListener('DOMContentLoaded', function () {
             location.href = 'description.html';
         }, 1000);
     });
-    localStorage.setItem('where', 0);
 
-    var forNavArr = ['about.html#pro', 'about.html#award'];
+
+
+
     navs.forEach(function (value, key) {
 
         value.addEventListener('click', function () {
