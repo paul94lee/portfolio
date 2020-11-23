@@ -4,8 +4,17 @@ function init() {
     var myStorage = window.localStorage;
 
     pageChange(myStorage.pageName)
+    var chanAni = document.querySelector('.chanAni');
+    var pageColor = {
+        UZEN: 'orange',
+        liability: '#000',
+        soodam: '#d74545'
+    };
 
-    up();
+    var pageName = myStorage.pageName;
+    chanAni.style = 'background-color:' + pageColor[pageName] + ';';
+    
+    goLeft();
 
     function pageChange(classy) {
 
@@ -141,7 +150,7 @@ function init() {
                     }, 400);
                     setTimeout(() => {
                         chanAni.classList.remove('active');
-                    }, 1500);
+                    }, 2000);
 
                 });
 

@@ -52,6 +52,50 @@ a {
     left: 0;
     top: 0;
     z-index: 20;
-    transition: transform opacity 2s;
+
     transform: translateY(100%);
+}
+
+.chanAni.goUp {
+    animation: goUp 1s linear;
+}
+@keyframes goUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    80% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.chanAni.goLeft {
+    animation: goLeft 1s linear;
+}
+@keyframes goLeft {
+    0% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+}
+.chanAni.goRight {
+    animation: goRight 1s linear;
+}
+@keyframes goRight {
+    0% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }

@@ -4,7 +4,11 @@ function init() {
     var awardPo = document.querySelector('.awards');
     var awardRight = document.querySelectorAll('.goRight')
     var awardLeft = document.querySelectorAll('.goLeft');
+
     var awardHeight;
+    var chanAni = document.querySelector('.chanAni');
+    chanAni.style.background="#282828"
+    goRight();
 
     //컨텍으로 들어올때 전환
     if (localStorage.go == 'contact') {

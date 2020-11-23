@@ -22,7 +22,7 @@
     }
 }
 html {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
@@ -407,23 +407,28 @@ body {
             filter: grayscale(1);
         }
     }
-
     .chanAni.active {
-        animation: pageAni 1.5s linear;
-        @keyframes pageAni {
-            0% {
-                transform: translateY(100%);
-            }
-            20% {
-                transform: translateY(0%);
-            }
-            60% {
-                transform: translateY(0%);
-            }
-            100% {
-                transform: translateY(0%);
-                transform: translateX(-70%);
-            }
+        animation: autoChan 1.5s linear;
+    }
+    @keyframes autoChan {
+        0% {
+            transform: translateY(100%);
         }
+        30% {
+            transform: translateY(0%);
+            transform: translateX(0%);
+        }
+
+        70% {
+            transform: translateY(0%);
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateY(0%);
+            transform: translateX(-60%);
+        }
+    }
+    .chanAni.base {
+        transform: translateY(0%);
     }
 }

@@ -31,10 +31,6 @@
   margin-bottom: 50px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 html .deform {
   margin-top: 50px;
   margin-bottom: 80px;

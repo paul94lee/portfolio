@@ -26,10 +26,6 @@
   font-size: 18px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: hidden;
 }
@@ -483,49 +479,62 @@ body .next img {
 }
 
 body .chanAni.active {
-  -webkit-animation: pageAni 1.5s linear;
-          animation: pageAni 1.5s linear;
+  -webkit-animation: autoChan 1.5s linear;
+          animation: autoChan 1.5s linear;
 }
 
-@-webkit-keyframes pageAni {
+@-webkit-keyframes autoChan {
   0% {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
-  20% {
+  30% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  60% {
+  70% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
   }
 }
 
-@keyframes pageAni {
+@keyframes autoChan {
   0% {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
-  20% {
+  30% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  60% {
+  70% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
   }
+}
+
+body .chanAni.base {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 /*# sourceMappingURL=description.css.map */
