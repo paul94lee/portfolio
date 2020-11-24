@@ -6,10 +6,10 @@
             "titLink": "https://paul94lee.github.io/liability/",
             "titImg": "img/liability-cover.jpg",
             "titBg": "#000",
-            "aboutTit": "Liability 가사 사이트",
-            "aboutCon": "ㄹㄹㄹㄹㄹㄹㄹㄹ",
+            "aboutTit": "Liability-Lorde<br> lyrics page",
+            "aboutCon": "싱글 페이지를 제작하고자 하여 만들게 된 사이트 입니다. 양쪽으로 나누어진 화면을 하나의 스크롤 액션으로 조절하며 가사를 볼 수 있게 하였습니다. 해당 페이지에서 핵심적인 기능이라고 생각한 부분은 스크롤에 의한 인터랙션들이라 판단했고 스크롤값을 통해 다양한 인터랙션들을 구현헀습니다. 페이지가 전체적으로 밋밋한 색상과 디자인을 가지고 있어 처음부분에 인트로를 제작하여 첫 임팩트를 주고 시작했습니다.",
             "aboutCli": "Self-Initiated",
-            "aboutDate": "20-10-11 ~ 20-10-30",
+            "aboutDate": "20-10-20 ~ 20-10-30",
             "aboutLang": [
                 "HTML/CSS",
                 "javascript"
@@ -29,7 +29,7 @@
                 "444"
             ],
             "siteImg": [
-                "img/liability-cover.jpg"
+                "img/description/liabilityMain.png"
             ],
             "siteLink": [
                 "https://paul94lee.github.io/liability/"
@@ -42,8 +42,8 @@
                 "768px",
                 "1280px"
             ],
-            "dsiConcept": "Art Direction that match the concept",
-            "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
+            "dsiConcept": "심플 & 포인트라는 키워드에 중점",
+            "dsiCon": "이용자들이 편안하게 가사를 볼 수 있도록 최대한 심플하고 낮은 채도로 디자인 되었습니다. 앨범 & 인트로와 같이 눈이 가야하는 지점에 채색이나 인터랙션으로 포인트를 주었습니다. ",
             "typoImg": "img/liability-cover.jpg",
             "dsiColor": [
                 "#e6e6e3",
@@ -59,13 +59,13 @@
     "soodam": [
         {
             "title": "soodam",
-            "titSub": "soodamsoodamsoodamsoodamsoodamsoodamsoodam",
+            "titSub": "수담은 재능있는 선생님, 카페사장님과 함께 성장하는 <br>클래스 '매칭/판매' 플랫폼입니다.",
             "titLink": "https://paul94lee.github.io/soodam/",
             "titImg": "img/soodam-cover.jpg",
             "titBg": "#d74545",
-            "aboutTit": "soodam은 blah blah ~~ soodam은 blah blah ~~",
-            "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
-            "aboutCli": "Self-Initiated",
+            "aboutTit": "카페와 클래스를<br> 이어주는 혁신 서비스",
+            "aboutCon": "수담은 한가지 생각에서 시작했습니다. '내가 찾는 클래스가 없네??' 최근 소규모 클래스에 대한 관심이 높아지고 있지만 클래스에 대한 정보를 쉽게 찾아볼 수 없었습니다. 그 이유를 생각해보니 클래스를 여는 입장에서 홍보수단이나 클래스를 열 장소가 마땅치 않을 때가 많다는걸 알았고 우리는 사람들이 쉽게 클래스를 열고 참여할 수 있도록 새로운 플랫폼 서비스를 만들고자 했습니다.<br><br> 메인페이지에서 주변 인기클래스와 신규클래스를 빠르게 확인할 수 있도록 컨텐츠를 배치했으며 원하는 클래스를 찾을 수 있는 검색기능을 구현했습니다. 디테일 페이지에선 클래스와 카페에 대한 데이터를 보여주며 예약 및 신청페이지로 연계하였습니다.",
+            "aboutCli": "Self-Initiated<br>team Project",
             "aboutDate": "20-08-10 ~ 20-9-10",
             "aboutLang": [
                 "HTML/CSS",
@@ -73,7 +73,7 @@
                 "JQuery"
             ],
             "vdoLink": "img/soodam-cover.jpg",
-            "vdoCon": "soodam 제작 페이지 소개",
+            "vdoCon": "soodam 메인 & 상세 페이지",
             "issue": [
                 "aaa",
                 "bbb",
@@ -87,9 +87,9 @@
                 "444"
             ],
             "siteImg": [
-                "img/soodam-cover.jpg",
-                "img/soodam-cover.jpg",
-                "img/soodam-cover.jpg"
+                "img/description/soodamMain.png",
+                "img/description/soodamClassDetail.png",
+                "img/description/soodamClassDetail.png"
             ],
             "siteLink": [
                 "https://paul94lee.github.io/soodam/",
@@ -106,9 +106,9 @@
                 "768px",
                 "1280px"
             ],
-            "dsiConcept": "Art Direction that match the concept",
-            "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
-            "typoImg": "img/soodam-cover.jpg",
+            "dsiConcept": "카페&클래스 컨셉에 맞는 디자인 방향성",
+            "dsiCon": "저희는 일반 수업 소비자와 카페사장 선생님이 모두 사용할 수 있는 웹 페이지를 만들고자 했습니다. 따라서 다양한 사용자층에 따른 쉽게 읽을 수 있는 디자인,상품판매와 소통이 동시에 이루어지는 디자인에 중점을 두었습니다.<br> 이를 위해밝은 코랄 컬러로 포인트를 주었고 카페를 상징하는 카푸치노 컵에 수업(페이퍼)가 담긴 로고를 제작했습니다.",
+            "typoImg": "",
             "dsiColor": [
                 "#d74545",
                 "#ffffff",
@@ -122,12 +122,12 @@
     "UZEN": [
         {
             "title": "UZEN",
-            "titSub": "유젠 사이트 리뉴얼",
+            "titSub": "유젠 사이트 클론 리뉴얼",
             "titLink": "https://paul94lee.github.io/UZEN/",
             "titImg": "img/uzen-cover.jpg",
             "titBg": "#fa5400",
-            "aboutTit": "UZEN는 blah blah ~~ UZEN은 blah blah ~~",
-            "aboutCon": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut turpis in tellus eleifend Sed non accumsan turpis. Suspendisse a sem laoreet, imperdiet elit a, luctus erat. Mauris sapien nibh, ac venenatis ipsum ultricies laoreet. Ut eget lacinia nisi. Morbi laoreet finibus urna,non tincidunt urna aliquam a. Pellentesque aliquet metus quis ligula vulputate, vel volutpat hendrerit. Proin nisi est, sagittis nec dictum feugiat, egestas accumsan felis. Aenean nisl justo, a porttitor mauris feugiat eu. Curabitur eu pharetra nisi. Suspendisse in dapibus enim.lacinia, lectus mi dapibus lacus, at vehicula velit ipsum quis nisl. Donec fermentum arcu nulla lacinia hendrerit. Vestibulum euismod, purus sed tincidunt consectetur, quam quam varius eget hendrerit quam metus eget justo.",
+            "aboutTit": "깔끔한 디자인으로 <br>다시 태어난 UZEN",
+            "aboutCon": "기존에 존재하는 UZEN 사이트를 더 깔끔하고 프로젝트를 한눈에 볼 수 있게 리뉴얼 했습니다. 최근 진행되었거나 진행중인 프로젝트들을 페이지 전면에 슬라이드형식으로 배치하여 회사의 능력과 정체성을 나타냈습니다. 애니메이션 등 눈에 띄는 인터랙션은 깔끔한 디자인과 어울리지 않다고 판단하여 작지만 디테일한 인터렉션을 걸어 완성도를 높였습니다.",
             "aboutCli": "Self-Initiated",
             "aboutDate": "20-10-05 ~ 20-10-11",
             "aboutLang": [
@@ -135,9 +135,9 @@
                 "javascript"
             ],
             "vdoLink": "vdo/uzen-video.mp4",
-            "vdoCon": "UZEN 페이지 소개",
+            "vdoCon": "UZEN 리뉴얼 페이지",
             "issue": [
-                "aaa",
+                "ㅁㅈㄷㄹ",
                 "bbb",
                 "ccc",
                 "ddd"
@@ -149,12 +149,12 @@
                 "444"
             ],
             "siteImg": [
-                "img/uzen-cover.jpg",
-                "img/uzen-cover.jpg",
-                "img/uzen-cover.jpg",
-                "img/uzen-cover.jpg",
-                "img/uzen-cover.jpg",
-                "img/uzen-cover.jpg"
+                "img/description/UZENMain.png",
+                "img/description/UZENAbout.png",
+                "img/description/UZENProduct.png",
+                "img/description/UZENWork.png",
+                "img/description/UZENContact.png",
+                "img/description/UZENCulture.png"
             ],
             "siteLink": [
                 "https://paul94lee.github.io/UZEN/",
@@ -162,8 +162,7 @@
                 "https://paul94lee.github.io/UZEN/product.html",
                 "https://paul94lee.github.io/UZEN/works.html",
                 "https://paul94lee.github.io/UZEN/contact.html",
-                "https://paul94lee.github.io/UZEN/culture.html",
-                "https://paul94lee.github.io/UZEN/career.html"
+                "https://paul94lee.github.io/UZEN/culture.html"
             ],
             "siteTit": [
                 "메인페이지",
@@ -178,8 +177,8 @@
                 "768px",
                 "1280px"
             ],
-            "dsiConcept": "Art Direction that match the concept",
-            "dsiCon": "I wanted the overall style to evoke travels, the adventures, and the personal connections that the Esperanto project represented. To do so, I knew I wanted a primary font with a humanist feel to itand a hand-drawn logo. This wordmark would look almost like what you draw on a notebook whilelooking trough the window on a long bus ride.",
+            "dsiConcept": "black & white 베이스 symbol 컬러 포인트",
+            "dsiCon": "회사의 솔루션과 포트폴리오는 black base를 통해 이용자들의 집중도를 높였고, contact & culture와 같은 추가 컨텐츠에는 white base로 편안한 느낌을 받게 하였습니다. 포인트적인 색상은 UZEN의 로고 색상인 <span style='color:#fa5400;'>#fa5400</span>으로 잡았습니다.",
             "typoImg": "img/liability-cover.jpg",
             "dsiColor": [
                 "#fa5400",
