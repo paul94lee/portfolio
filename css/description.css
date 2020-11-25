@@ -486,8 +486,8 @@ body .next img {
 }
 
 body .chanAni.active {
-  -webkit-animation: autoChan 1.5s linear;
-          animation: autoChan 1.5s linear;
+  -webkit-animation: autoChan 1s linear;
+          animation: autoChan 1s linear;
 }
 
 @-webkit-keyframes autoChan {

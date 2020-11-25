@@ -40,6 +40,7 @@ html .deform {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 72%;
 }
 
 html .deform p {
@@ -48,12 +49,12 @@ html .deform p {
 
 html .deform p:nth-of-type(1) {
   font-weight: 700;
-  width: 30%;
+  width: 20%;
 }
 
 html .deform p:nth-of-type(2) {
-  font-size: 25px;
-  width: 58%;
+  font-size: 20px;
+  width: 70%;
   color: #333;
 }
 
@@ -120,14 +121,11 @@ body .forTitleFoot {
 
 body .title {
   position: fixed;
-  display: block;
   top: 0;
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -187,15 +185,49 @@ body .title .titImg img {
           filter: brightness(70%);
 }
 
-body .next {
+body .contactMe {
   display: none;
   width: 100vw;
   height: 100vh;
-  color: #282828;
+  background-color: #282828;
   margin-bottom: 0;
   position: fixed;
   z-index: 0;
   top: 0;
+}
+
+body .contactMe .contactText {
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 28vh;
+}
+
+body .contactMe .contactText h2 {
+  color: #fff;
+}
+
+body .contactMe .contactText p {
+  color: #fff;
+}
+
+body .contactMe ul {
+  width: 72%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .contactMe ul li {
+  width: 3%;
+}
+
+body .contactMe ul li img {
+  width: 100%;
+  height: auto;
 }
 
 body .content-wrap {
@@ -212,6 +244,30 @@ body .content-wrap > * {
 
 body .content-wrap .titText {
   padding-top: 100px;
+}
+
+body .content-wrap .workSlide {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .content-wrap .workSlide div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content-wrap .workSlide div figure {
+  width: 100%;
+}
+
+body .content-wrap .workSlide div figure img {
+  width: 50%;
+  height: auto;
+  margin-right: 100px;
 }
 
 body .content-wrap .horizHobby {

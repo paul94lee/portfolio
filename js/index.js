@@ -368,7 +368,7 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             localStorage.setItem('pageName', go);
             location.href = 'description.html';
-        }, 1000);
+        }, 500);
     });
 
 
@@ -382,7 +382,7 @@ window.addEventListener('DOMContentLoaded', function () {
         goUp();
         setTimeout(() => {
             location.href = 'about.html';
-        }, 1000);
+        }, 500);
 
     });
 });
