@@ -1,4 +1,5 @@
 @import url("common.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,10 @@
     font-size: 20px;
   }
   .smallTit {
+<<<<<<< HEAD
+    font-size: 66px;
+=======
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
     margin-bottom: 50px;
   }
 }
@@ -33,16 +38,27 @@ html {
     justify-content: space-between;
     width: 72%;
     p {
+<<<<<<< HEAD
+      font-size: 18px;
+    }
+    p:nth-of-type(1) {
+      margin-left: 200px;
+=======
       font-size: 25px;
     }
     p:nth-of-type(1) {
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
       font-weight: 700;
 
       width: 20%;
     }
     p:nth-of-type(2) {
       font-size: 20px;
+<<<<<<< HEAD
+      width: 65%;
+=======
       width: 70%;
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
       color: #333;
     }
   }
@@ -123,12 +139,21 @@ body {
           font-weight: 800;
           color: #fff;
           font-family: "Playfair Display";
+<<<<<<< HEAD
         }
         p {
           font-weight: 200;
           font-size: 18px;
           color: #fff;
         }
+=======
+        }
+        p {
+          font-weight: 200;
+          font-size: 18px;
+          color: #fff;
+        }
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
       }
     }
     .titImg {
@@ -184,6 +209,46 @@ body {
           height: auto;
         }
       }
+<<<<<<< HEAD
+    }
+  }
+
+  .content-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    background-color: #fff;
+    > * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .titText {
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+    .workSlide {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 100px;
+      div {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        figure {
+          width: 30%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            margin-right: 50px;
+            height: auto;
+          }
+          figcaption {
+            width: 100%;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #555;
+=======
     }
   }
 
@@ -214,6 +279,7 @@ body {
             margin-right: 100px;
           }
           figcaption {
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
           }
         }
       }
@@ -251,6 +317,60 @@ body {
               100% {
                 transform: scale(1);
               }
+<<<<<<< HEAD
+            }
+          }
+        }
+
+        .listMove {
+          position: relative;
+          height: 100px;
+          width: 100%;
+          ul {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            li {
+              font-size: 20px;
+            }
+          }
+          ul:nth-of-type(2) {
+            left: 100%;
+            transform: translate(0%, -50%);
+          }
+          animation: casol infinite 12s linear;
+          @keyframes casol {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+        }
+      }
+    }
+    .skills {
+      margin-bottom: 100px;
+      > div {
+        margin-top: 50px;
+        h4 {
+          font-size: 25px;
+          margin-bottom: 50px;
+        }
+        .skillUnit {
+          margin-bottom: 50px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          img {
+            width: 12%;
+=======
             }
           }
         }
@@ -303,6 +423,7 @@ body {
 
           img {
             width: 20%;
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
 
             border-radius: 10px;
           }
@@ -310,6 +431,42 @@ body {
             width: 70%;
             font-size: 25px;
           }
+<<<<<<< HEAD
+        }
+        .ETCSkillUnit {
+          width: 100%;
+          display: flex;
+          justify-content: start;
+          img {
+            width: 8%;
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+    .changeContent {
+      width: 100%;
+      background: linear-gradient(#fff 50%, #000 50%);
+      padding: 200px 0;
+      figure {
+        width: 80%;
+        height: 80vh;
+        background-color: #aaa;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: 100%;
+          background-color: #555;
+          width: 100%;
+        }
+        figcaption {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+          color: #fff;
+        }
+      }
+=======
         }
       }
     }
@@ -323,6 +480,7 @@ body {
         background-color: #555;
         margin: 0 auto;
       }
+>>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
     }
     .awards {
       background-color: #000;
