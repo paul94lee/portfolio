@@ -370,60 +370,6 @@ body {
 
           img {
             width: 12%;
-=======
-            }
-          }
-        }
-
-        .listMove {
-          position: relative;
-          height: 100px;
-          width: 100%;
-          ul {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            width: 100vw;
-            display: flex;
-            justify-content: space-around;
-            li {
-              font-size: 20px;
-            }
-          }
-          ul:nth-of-type(2) {
-            left: 100%;
-            transform: translate(0%, -50%);
-          }
-          animation: casol infinite 12s linear;
-          @keyframes casol {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-100%);
-            }
-          }
-        }
-      }
-    }
-    .skills {
-      margin-bottom: 100px;
-      > div {
-        margin-top: 50px;
-        h4 {
-          font-size: 25px;
-          margin-bottom: 50px;
-        }
-        .skillUnit {
-          margin-bottom: 50px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          img {
-            width: 20%;
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
 
             border-radius: 10px;
           }
@@ -431,7 +377,6 @@ body {
             width: 70%;
             font-size: 25px;
           }
-<<<<<<< HEAD
         }
         .ETCSkillUnit {
           width: 100%;
@@ -466,21 +411,6 @@ body {
           color: #fff;
         }
       }
-=======
-        }
-      }
-    }
-    .changeContent {
-      width: 100%;
-      background: linear-gradient(#fff 50%, #000 50%);
-      padding: 200px 0;
-      div {
-        width: 80%;
-        height: 80vh;
-        background-color: #555;
-        margin: 0 auto;
-      }
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
     }
     .awards {
       background-color: #000;
