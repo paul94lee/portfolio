@@ -1,40 +1,38 @@
 window.addEventListener("load", init)
+
 function init() {
 
     var awardPo = document.querySelector('.awards');
     var awardRight = document.querySelectorAll('.goRight')
     var awardLeft = document.querySelectorAll('.goLeft');
-
+    var title = document.querySelector('.title');
     var awardHeight;
     var chanAni = document.querySelector('.chanAni');
-    chanAni.style.background="#282828"
+    chanAni.style.background = "#282828"
     goRight();
+    setTimeout(() => {
+        title.style.display='flex';
+    }, 1);
 
-    //컨텍으로 들어올때 전환
-    if (localStorage.go == 'contact') {
-        var body = document.querySelector('body');
-        var bott = body.offsetHeight;
-        scrollTo(0, bott);
-        console.log(bott)
-    }
 
     //titFoot 전환 
     window.addEventListener("scroll", tfSwitch)
+
     function tfSwitch(e) {
         var body = document.querySelector('body');
         var direc = scrollY < body.offsetHeight / 2;
         titFoot(direc);
     }
+
     function titFoot(direc) {
         var tit = document.querySelector('.title');
-        var nex = document.querySelector('.next');
+        var conMe = document.querySelector('.contactMe');
         if (direc) {
             tit.style.display = "flex";
-            nex.style.display = "none";
-        }
-        else {
+            conMe.style.display = "none";
+        } else {
             tit.style.display = "none";
-            nex.style.display = "block";
+            conMe.style.display = "block";
         }
     };
 
@@ -49,6 +47,7 @@ function init() {
 
     //award scroll 이벤트
     window.addEventListener('scroll', awardAni);
+
     function awardAni() {
         awardHeight = window.pageYOffset + awardPo.getBoundingClientRect().top;
         if (awardHeight < window.scrollY + window.innerHeight) {

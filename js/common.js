@@ -16,7 +16,7 @@ function init() {
             setTimeout(() => {
 
                 location.href = 'about.html';
-            }, 1400);
+            }, 300);
         });
     } catch (err) {
     }
