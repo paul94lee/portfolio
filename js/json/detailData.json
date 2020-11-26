@@ -44,7 +44,7 @@
             ],
             "dsiConcept": "심플 & 포인트라는 키워드에 중점",
             "dsiCon": "이용자들이 편안하게 가사를 볼 수 있도록 최대한 심플하고 낮은 채도로 디자인 되었습니다. 앨범 & 인트로와 같이 눈이 가야하는 지점에 채색이나 인터랙션으로 포인트를 주었습니다. ",
-            "typoImg": "img/liability-cover.jpg",
+            "typoImg": "img/description/liabilityFont.png",
             "dsiColor": [
                 "#e6e6e3",
                 "#000000",
@@ -108,7 +108,7 @@
             ],
             "dsiConcept": "카페&클래스 컨셉에 맞는 디자인 방향성",
             "dsiCon": "저희는 일반 수업 소비자와 카페사장 선생님이 모두 사용할 수 있는 웹 페이지를 만들고자 했습니다. 따라서 다양한 사용자층에 따른 쉽게 읽을 수 있는 디자인,상품판매와 소통이 동시에 이루어지는 디자인에 중점을 두었습니다.<br> 이를 위해밝은 코랄 컬러로 포인트를 주었고 카페를 상징하는 카푸치노 컵에 수업(페이퍼)가 담긴 로고를 제작했습니다.",
-            "typoImg": "",
+            "typoImg": "img/description/soodamFont.png",
             "dsiColor": [
                 "#d74545",
                 "#ffffff",
@@ -179,7 +179,7 @@
             ],
             "dsiConcept": "black & white 베이스 symbol 컬러 포인트",
             "dsiCon": "회사의 솔루션과 포트폴리오는 black base를 통해 이용자들의 집중도를 높였고, contact & culture와 같은 추가 컨텐츠에는 white base로 편안한 느낌을 받게 하였습니다. 포인트적인 색상은 UZEN의 로고 색상인 <span style='color:#fa5400;'>#fa5400</span>으로 잡았습니다.",
-            "typoImg": "img/liability-cover.jpg",
+            "typoImg": "img/description/UZENFont.png",
             "dsiColor": [
                 "#fa5400",
                 "#ffffff",

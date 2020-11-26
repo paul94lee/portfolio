@@ -56,11 +56,7 @@ html .deform p:nth-of-type(1) {
 
 html .deform p:nth-of-type(2) {
   font-size: 20px;
-<<<<<<< HEAD
   width: 65%;
-=======
-  width: 70%;
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
   color: #333;
 }
 
@@ -286,30 +282,6 @@ body .content-wrap .workSlide div figure figcaption {
   margin-top: 5px;
   font-size: 12px;
   color: #555;
-}
-
-body .content-wrap .workSlide {
-  width: 100%;
-  overflow: hidden;
-}
-
-body .content-wrap .workSlide div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .content-wrap .workSlide div figure {
-  width: 100%;
-}
-
-body .content-wrap .workSlide div figure img {
-  width: 50%;
-  height: auto;
-  margin-right: 100px;
 }
 
 body .content-wrap .horizHobby {

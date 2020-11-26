@@ -23,10 +23,9 @@
     font-size: 20px;
   }
   .smallTit {
-<<<<<<< HEAD
+
     font-size: 66px;
-=======
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
+
     margin-bottom: 50px;
   }
 }
@@ -38,27 +37,21 @@ html {
     justify-content: space-between;
     width: 72%;
     p {
-<<<<<<< HEAD
+
       font-size: 18px;
     }
     p:nth-of-type(1) {
       margin-left: 200px;
-=======
-      font-size: 25px;
-    }
-    p:nth-of-type(1) {
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
+
       font-weight: 700;
 
       width: 20%;
     }
     p:nth-of-type(2) {
       font-size: 20px;
-<<<<<<< HEAD
+
       width: 65%;
-=======
-      width: 70%;
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
+
       color: #333;
     }
   }
@@ -139,21 +132,14 @@ body {
           font-weight: 800;
           color: #fff;
           font-family: "Playfair Display";
-<<<<<<< HEAD
+
         }
         p {
           font-weight: 200;
           font-size: 18px;
           color: #fff;
         }
-=======
-        }
-        p {
-          font-weight: 200;
-          font-size: 18px;
-          color: #fff;
-        }
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
+
       }
     }
     .titImg {
@@ -209,7 +195,7 @@ body {
           height: auto;
         }
       }
-<<<<<<< HEAD
+
     }
   }
 
@@ -248,38 +234,7 @@ body {
             margin-top: 5px;
             font-size: 12px;
             color: #555;
-=======
-    }
-  }
 
-  .content-wrap {
-    position: relative;
-    z-index: 1;
-    width: 100vw;
-    background-color: #fff;
-    > * {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .titText {
-      padding-top: 100px;
-    }
-    .workSlide {
-      width: 100%;
-      overflow: hidden;
-      div {
-        display: flex;
-        justify-content: space-between;
-        figure {
-          width: 100%;
-          img {
-            width: 50%;
-
-            height: auto;
-            margin-right: 100px;
-          }
-          figcaption {
->>>>>>> 244eec3a9303da9d1e077315cab17da39372ac50
           }
         }
       }
@@ -317,7 +272,7 @@ body {
               100% {
                 transform: scale(1);
               }
-<<<<<<< HEAD
+
             }
           }
         }
