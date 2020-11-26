@@ -28,7 +28,6 @@
 }
 
 * .smallTit {
-  font-size: 66px;
   margin-bottom: 50px;
 }
 
@@ -45,18 +44,17 @@ html .deform {
 }
 
 html .deform p {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 html .deform p:nth-of-type(1) {
-  margin-left: 200px;
   font-weight: 700;
   width: 20%;
 }
 
 html .deform p:nth-of-type(2) {
   font-size: 20px;
-  width: 65%;
+  width: 70%;
   color: #333;
 }
 
@@ -246,17 +244,14 @@ body .content-wrap > * {
 
 body .content-wrap .titText {
   padding-top: 100px;
-  padding-bottom: 30px;
 }
 
 body .content-wrap .workSlide {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 100px;
 }
 
 body .content-wrap .workSlide div {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,22 +261,13 @@ body .content-wrap .workSlide div {
 }
 
 body .content-wrap .workSlide div figure {
-  width: 30%;
-  overflow: hidden;
+  width: 100%;
 }
 
 body .content-wrap .workSlide div figure img {
-  width: 100%;
-  margin-right: 50px;
+  width: 50%;
   height: auto;
-}
-
-body .content-wrap .workSlide div figure figcaption {
-  width: 100%;
-  text-align: center;
-  margin-top: 5px;
-  font-size: 12px;
-  color: #555;
+  margin-right: 100px;
 }
 
 body .content-wrap .horizHobby {
@@ -428,36 +414,22 @@ body .content-wrap .skills > div .skillUnit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 body .content-wrap .skills > div .skillUnit img {
-  width: 12%;
+  width: 20%;
   border-radius: 10px;
 }
 
 body .content-wrap .skills > div .skillUnit p {
   width: 70%;
   font-size: 25px;
-}
-
-body .content-wrap .skills > div .ETCSkillUnit {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-body .content-wrap .skills > div .ETCSkillUnit img {
-  width: 8%;
-  margin-right: 5%;
 }
 
 body .content-wrap .changeContent {
@@ -467,25 +439,11 @@ body .content-wrap .changeContent {
   padding: 200px 0;
 }
 
-body .content-wrap .changeContent figure {
+body .content-wrap .changeContent div {
   width: 80%;
   height: 80vh;
-  background-color: #aaa;
-  margin: 0 auto;
-}
-
-body .content-wrap .changeContent figure img {
-  width: 100%;
-  height: 100%;
   background-color: #555;
-  width: 100%;
-}
-
-body .content-wrap .changeContent figure figcaption {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-  color: #fff;
+  margin: 0 auto;
 }
 
 body .content-wrap .awards {

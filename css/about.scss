@@ -1,5 +1,4 @@
 @import url("common.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +22,6 @@
     font-size: 20px;
   }
   .smallTit {
-    font-size: 66px;
     margin-bottom: 50px;
   }
 }
@@ -35,17 +33,16 @@ html {
     justify-content: space-between;
     width: 72%;
     p {
-      font-size: 18px;
+      font-size: 25px;
     }
     p:nth-of-type(1) {
-      margin-left: 200px;
       font-weight: 700;
 
       width: 20%;
     }
     p:nth-of-type(2) {
       font-size: 20px;
-      width: 65%;
+      width: 70%;
       color: #333;
     }
   }
@@ -201,30 +198,22 @@ body {
     }
     .titText {
       padding-top: 100px;
-      padding-bottom: 30px;
     }
     .workSlide {
       width: 100%;
       overflow: hidden;
-      margin-bottom: 100px;
       div {
-        position: relative;
         display: flex;
         justify-content: space-between;
         figure {
-          width: 30%;
-          overflow: hidden;
+          width: 100%;
           img {
-            width: 100%;
-            margin-right: 50px;
+            width: 50%;
+
             height: auto;
+            margin-right: 100px;
           }
           figcaption {
-            width: 100%;
-            text-align: center;
-            margin-top: 5px;
-            font-size: 12px;
-            color: #555;
           }
         }
       }
@@ -309,11 +298,11 @@ body {
         .skillUnit {
           margin-bottom: 50px;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
 
           img {
-            width: 12%;
+            width: 20%;
 
             border-radius: 10px;
           }
@@ -322,38 +311,17 @@ body {
             font-size: 25px;
           }
         }
-        .ETCSkillUnit {
-          width: 100%;
-          display: flex;
-          justify-content: start;
-          img {
-            width: 8%;
-            margin-right: 5%;
-          }
-        }
       }
     }
     .changeContent {
       width: 100%;
       background: linear-gradient(#fff 50%, #000 50%);
       padding: 200px 0;
-      figure {
+      div {
         width: 80%;
         height: 80vh;
-        background-color: #aaa;
+        background-color: #555;
         margin: 0 auto;
-        img {
-          width: 100%;
-          height: 100%;
-          background-color: #555;
-          width: 100%;
-        }
-        figcaption {
-          width: 100%;
-          text-align: center;
-          margin-top: 20px;
-          color: #fff;
-        }
       }
     }
     .awards {
