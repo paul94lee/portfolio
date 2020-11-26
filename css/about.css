@@ -71,6 +71,7 @@ body .navi {
   padding: 30px 5%;
   z-index: 100;
   color: #fff;
+  -ms-color: #555;
   mix-blend-mode: difference;
 }
 
@@ -93,6 +94,7 @@ body .navi ul li {
           align-items: center;
   height: 100%;
   color: #fff;
+  -ms-color: #555;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -102,6 +104,7 @@ body .navi ul li {
 
 body .navi ul li div {
   color: #fff;
+  -ms-color: #555;
   display: inline-block;
   height: 15px;
   margin-right: 10px;
