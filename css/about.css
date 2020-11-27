@@ -211,8 +211,32 @@ body .contactMe .contactText h2 {
   color: #fff;
 }
 
-body .contactMe .contactText p {
+body .contactMe .contactText .atWork {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .contactMe .contactText .atWork p {
   color: #fff;
+  font-size: 20px;
+}
+
+body .contactMe .contactText .atWork p i {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+body .contactMe .contactText .atWork p:nth-of-type(1) {
+  width: 30%;
+}
+
+body .contactMe .contactText .atWork p:nth-of-type(2) {
+  width: 60%;
 }
 
 body .contactMe ul {
@@ -423,7 +447,7 @@ body .content-wrap .skills > div {
 
 body .content-wrap .skills > div h4 {
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 body .content-wrap .skills > div .skillUnit {
@@ -448,6 +472,11 @@ body .content-wrap .skills > div .skillUnit p {
   font-size: 25px;
 }
 
+body .content-wrap .skills > div .p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
 body .content-wrap .skills > div .ETCSkillUnit {
   width: 100%;
   display: -webkit-box;
@@ -461,6 +490,11 @@ body .content-wrap .skills > div .ETCSkillUnit {
 body .content-wrap .skills > div .ETCSkillUnit img {
   width: 8%;
   margin-right: 5%;
+}
+
+body .content-wrap .skills .etc p {
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
 body .content-wrap .changeContent {
