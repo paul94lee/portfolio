@@ -156,16 +156,16 @@ body {
             transform: translateX(-50%);
             p {
                 text-transform: uppercase;
-                
+                color: rgba(255, 255, 255, 0.3);
                 font-family: 'Arimo', sans-serif;
                 width: 100%;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 font-weight: 600;
             }
             p:hover {
 
-                color: rgba(255, 255, 255, 0.5);
+                color: rgba(255, 255, 255, 0.7);
             }
         }
     }

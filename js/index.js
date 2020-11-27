@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', function () {
     var second = document.querySelector('.second');
     var nav = document.querySelector('.nav p');
 
-    var titArr = ['react', 'animations', 'UZEN', 'soodam', 'liability'];
-    var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/UZENvisual.jpg'];
+    var titArr = ['soodam', 'liability', 'UZEN', 'soodam', 'liability'];
+    var imgArr = ['img/liability.jpg', 'img/UZENvisual.jpg', 'img/soodam.jpg', 'img/liability.jpg', 'img/soodam.jpg'];
 
     var introArr = ['안녕하세요 ', '제 ', '이름은 ', '이재욱 ', '입니다.', '포트폴리오를 ', '보려고 ', '들어오셨죠?', '이제', '곧 ', '보실 수 ', '있습니다.', '3', '2', '1'];
 
