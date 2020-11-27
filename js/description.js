@@ -59,10 +59,10 @@ function init() {
                         Lang += "<p>" + value + "</p>"
                     });
                     issue.forEach(function (value, key) {
-                        iss += "<div>" + value + "</div>"
+                        iss += "<p>" + value + "</p>"
                     });
                     solve.forEach(function (value, key) {
-                        sol += "<div>" + value + "</div>"
+                        sol += "<p>" + value + "</p>"
                     });
 
 
@@ -93,7 +93,7 @@ function init() {
 
                     conCode += "<div class='vdo wd90'><video autoplay muted loop><source src=" + vdoLink + "></video><p><i>" + vdoCon + "</i></p></div>";
 
-                    conCode += "<section class='solve wd72'><h3> 1.</h3><h2>Solving problems</h2><div class='deform'><p>이곳은 문제해결 설명란입니다.</p><p>코딩하면서 여러가지 문제점에 도달했는데 이를 해결하기 위해 시도했거나 개선한 점을 기술한다.</p></div><div class='solveProcess'><div><h4>발생 문제</h4><div>" + iss + "</div></div><div><h4>해결 방안</h4><div>" + sol + "</div></div></div></section>";
+                    conCode += "<section class='solve wd72'><h3> 1.</h3><h2>Solving Requirements</h2><div class='deform'><p>요구사항 & 해결방법</p><p>프로젝트에 필요한 요구사항과 요구사항을 어떻게 처리했는지 보여드립니다.</p></div><div class='solveProcess'><div><h4>요구사항</h4><div>" + iss + "</div></div><div><h4>해결 방안</h4><div>" + sol + "</div></div></div></section>";
 
                     conCode += "<section class='site-map wd72' ><h3>2.</h3><h2>site map</h2><div class='site-wrap'>" + fig + "</div></section>";
 

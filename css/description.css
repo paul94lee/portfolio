@@ -320,11 +320,24 @@ body .change .content-wrap .solve .solveProcess {
 }
 
 body .change .content-wrap .solve .solveProcess div {
-  width: 50%;
+  width: 45%;
 }
 
 body .change .content-wrap .solve .solveProcess div h4 {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+body .change .content-wrap .solve .solveProcess div > div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .change .content-wrap .solve .solveProcess div > div p {
+  min-height: 100px;
+  font-size: 18px;
+  padding: 20px 0;
+  border-top: 1px solid #000;
 }
 
 body .change .content-wrap .site-map .site-wrap {
