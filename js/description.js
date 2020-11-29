@@ -145,6 +145,8 @@ function init() {
 
 
                 var nextDetail = document.querySelector('.next');
+
+
                 nextDetail.addEventListener('click', function () {
                     chanAni.classList.add('active');
                     chanAni.style = "background-color:" + nextColor;
