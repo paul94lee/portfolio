@@ -14,7 +14,7 @@
 }
 
 * h1 {
-  font-size: 11rem;
+  font-size: 12rem;
 }
 
 * h2 {
@@ -128,8 +128,11 @@ body .change .title .tit-wrap .titTxt {
 }
 
 body .change .title .tit-wrap .titTxt .txtInner {
-  width: 80%;
-  margin: 25% auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body .change .title .tit-wrap .titTxt .txtInner h1 {
@@ -179,6 +182,7 @@ body .change .linkIcon {
   height: 70px;
   border-radius: 70px;
   overflow: hidden;
+  font-size: 15px;
 }
 
 body .change .linkIcon .linkIconActive {
