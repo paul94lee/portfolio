@@ -9,16 +9,19 @@
         text-decoration-style: none;
     }
     h1 {
-        font-size: 140px;
+        font-size: 11rem;
     }
     h2 {
-        font-size: 66px;
+        font-size: 6.6rem;
         white-space: pre-line;
     }
     h3 {
     }
     h4 {
         font-size: 18px;
+    }
+    p{
+        font-size: 20px !important;
     }
 }
 html {
@@ -197,7 +200,7 @@ body {
                 > h2 {
                     // font-family: 'Prata', serif;
                     font-family: "Rozha One", serif;
-                    font-size: 70px;
+                    font-size: 7rem;
                     margin-bottom: 50px;
                     font-weight: normal;
                 }
@@ -237,7 +240,7 @@ body {
                     > p {
                         width: 70%;
                         margin-right: 12%;
-                        font-size: 1.5em;
+                        font-size: 15px;
                         line-height: 180%;
                     }
                     .myWork {
@@ -302,17 +305,17 @@ body {
 
                     a {
                         background-color: #fff;
-                        width: 22%;
+                        width: 28%;
                         border-radius: 20px;
-                        margin: 0 5%;
-                        margin-bottom: 5%;
+                        margin: 0 2%;
+                        margin-bottom: 3%;
 
                         figure {
                             width: 100%;
                             background-color: #fdfdfd;
                             box-shadow: 3px 3px 2px #ccc;
                             border-radius: 20px;
-                            padding: 7%;
+                            padding: 5%;
                             background-color: #f7f7f7;
                             img {
                                 width: 100%;
@@ -320,9 +323,9 @@ body {
                             }
                             figcaption {
                                 text-align: center;
-                                padding-top: 20px;
+                                padding-top: 5px;
                                 width: 100%;
-                                font-size: 1.4rem;
+                                font-size: 20px;
                             }
                         }
                     }
@@ -336,7 +339,7 @@ body {
                     span {
                         display: inline-block;
                         text-align: center;
-                        font-size: 1.5rem;
+                        font-size: 15px;
                         width: 20%;
                         padding: 20px 0;
                         border: 2px solid #000;
@@ -404,7 +407,7 @@ body {
             transform: translate(-50%, -50%);
             z-index: 1;
             h1 {
-                font-size: 150px;
+                font-size: 12rem;
             }
             h4 {
                 font-size: 2vw;

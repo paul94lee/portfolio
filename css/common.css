@@ -18,8 +18,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 html,
 body {
+
     font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -133,5 +138,17 @@ a {
         transform: translateX(40%);
         opacity: 0;
         z-index: -1;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    html {
+        font-size: 8px;
     }
 }
