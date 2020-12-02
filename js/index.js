@@ -385,4 +385,11 @@ window.addEventListener('DOMContentLoaded', function () {
         }, 500);
 
     });
+
+    var imgs=['./img/soodam-cover.jpg','./img/uzen-cover.jpg','./img/liability-cover.jpg'];
+    for(var i=0;i<imgs.length;i++){
+        var creative =document.createElement('img');
+
+        creative.src=imgs[i];
+    }
 });
