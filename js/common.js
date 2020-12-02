@@ -23,12 +23,10 @@ function init() {
 
 }
 function goUp() {
-    console.log('up')
     var chanAni = document.querySelector('.chanAni');
     chanAni.classList.add('goUp');
 };
 function goLeft() {
-    console.log('left')
     var chanAni = document.querySelector('.chanAni');
     chanAni.classList.add('goLeft');
     chanAni.classList.remove('base');

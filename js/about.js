@@ -55,11 +55,11 @@ function init() {
             var persent = Math.floor(leng / 25) / 15;
             awardRight.forEach(function (value) {
                 value.style.transform = 'translateX(calc(-10% + ' + persent + '%)) rotate(3deg)';
-                console.log(persent)
+
             });
             awardLeft.forEach(function (value) {
                 value.style.transform = 'translateX(calc(-10% + ' + -persent + '%)) rotate(-3deg)';
-                console.log(persent)
+
             });
 
 

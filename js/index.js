@@ -360,7 +360,6 @@ window.addEventListener('DOMContentLoaded', function () {
             liability: '#000',
             soodam: '#d74545'
         };
-        console.log(3333)
         chanAni.style = 'background-color:' + pageColor[go] + ';';
 
         goUp();

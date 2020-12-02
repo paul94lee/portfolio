@@ -19,7 +19,7 @@ function init() {
     function pageChange(classy) {
 
         var url = 'js/json/detailData.json';
-        console.log(url)
+
         fetch(url)
             .then(response => response.json()
             )
@@ -51,7 +51,7 @@ function init() {
                     dsiConcept = value.dsiConcept; dsiCon = value.dsiCon; typoImg = value.typoImg; dsiColor = value.dsiColor;
 
                     nextTit = value.nextTit; nextImg = value.nextImg; nextColor = value.nextColor;
-                    console.log(nextTit)
+
 
                     //배열 관리
 
