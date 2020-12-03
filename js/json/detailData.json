@@ -66,7 +66,7 @@
                 "javascript",
                 "JQuery"
             ],
-            "vdoLink": "img/soodam-cover.jpg",
+            "vdoLink": "vdo/soodam-vdo.mp4",
             "vdoCon": "soodam 메인 & 상세 페이지",
             "issue": [
                 "메인화면 슬라이드가 끝에 도달 시 자연스럽게 처음으로 돌아가야함",
