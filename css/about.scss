@@ -101,346 +101,349 @@ body {
     width: 100vw;
     height: 100vh;
   }
-  .title {
-    position: fixed;
+  .test {
+    .title {
+      position: fixed;
 
-    top: 0;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    justify-content: space-between;
-    // background-color: #282828;
+      top: 0;
+      z-index: 0;
+      width: 100vw;
+      height: 100vh;
+      display: none;
+      justify-content: space-between;
+      // background-color: #282828;
 
-    .titTex {
-      padding-top: 100px;
-      position: relative;
-      width: 60%;
-      background-color: #282828;
-      div {
-        position: absolute;
-        left: 20%;
-        top: 30%;
-        height: 100%;
-        width: 70%;
-        span {
-          display: block;
-          font-size: 20px;
-          color: #fff;
-        }
-        h2 {
-          font-size: 60px;
-          font-weight: 800;
-          color: #fff;
-          font-family: "Playfair Display";
-        }
-        p {
-          font-weight: 200;
-          font-size: 18px;
-          color: #fff;
-        }
-      }
-    }
-    .titImg {
-      position: relative;
-      width: 40%;
-      height: 100%;
-      background-color: #cfc1ff;
-      overflow: hidden;
-      img {
-        height: 100%;
-        position: absolute;
-        z-index: 0;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        filter: brightness(70%);
-      }
-    }
-  }
-
-  .contactMe {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    background-color: #282828;
-    margin-bottom: 0;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    .contactText {
-      width: 72%;
-
-      margin: 0 auto;
-      padding-top: 28vh;
-      h2 {
-        color: #fff;
-      }
-      .atWork {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        p {
-          color: #fff;
-          font-size: 20px;
-          i{
-            color: #a1a1a1;
-            font-size: 14px;
+      .titTex {
+        padding-top: 100px;
+        position: relative;
+        width: 60%;
+        background-color: #282828;
+        div {
+          position: absolute;
+          left: 20%;
+          top: 30%;
+          height: 100%;
+          width: 70%;
+          span {
+            display: block;
+            font-size: 20px;
+            color: #fff;
+          }
+          h2 {
+            font-size: 60px;
+            font-weight: 800;
+            color: #fff;
+            font-family: "Playfair Display";
+          }
+          p {
+            font-weight: 200;
+            font-size: 18px;
+            color: #fff;
           }
         }
-        p:nth-of-type(1) {
-          width: 30%;
-        }
-        p:nth-of-type(2) {
-          width: 60%;
-        }
       }
-    }
-    ul {
-      width: 72%;
-      margin: 0 auto;
-      margin-top: 100px;
-      display: flex;
-      justify-content: space-around;
-
-      li {
-        width: 3%;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  .content-wrap {
-    position: relative;
-    z-index: 1;
-    width: 100vw;
-    background-color: #fff;
-    > * {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .titText {
-      padding-top: 100px;
-      padding-bottom: 30px;
-    }
-    .workSlide {
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 100px;
-      div {
+      .titImg {
         position: relative;
+        width: 40%;
+        height: 100%;
+        background-color: #cfc1ff;
+        overflow: hidden;
+        img {
+          height: 100%;
+          position: absolute;
+          z-index: 0;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          filter: brightness(70%);
+        }
+      }
+    }
+
+    .contactMe {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      background-color: #282828;
+      margin-bottom: 0;
+      position: fixed;
+
+      z-index: 0;
+      bottom: 0;
+      .contactText {
+        width: 72%;
+
+        margin: 0 auto;
+        padding-top: 28vh;
+        h2 {
+          color: #fff;
+        }
+        .atWork {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          p {
+            color: #fff;
+            font-size: 20px;
+            i {
+              color: #a1a1a1;
+              font-size: 14px;
+            }
+          }
+          p:nth-of-type(1) {
+            width: 30%;
+          }
+          p:nth-of-type(2) {
+            width: 60%;
+          }
+        }
+      }
+      ul {
+        width: 72%;
+        margin: 0 auto;
+        margin-top: 100px;
         display: flex;
-        justify-content: space-between;
-        figure {
-          width: 30%;
-          overflow: hidden;
+        justify-content: space-around;
+
+        li {
+          width: 3%;
           img {
             width: 100%;
-            margin-right: 50px;
             height: auto;
+          }
+        }
+      }
+    }
+
+    .content-wrap {
+      position: relative;
+      z-index: 1;
+      width: 100vw;
+      background-color: #fff;
+      > * {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .titText {
+        padding-top: 100px;
+        padding-bottom: 30px;
+      }
+      .workSlide {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 100px;
+        div {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          figure {
+            width: 30%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              margin-right: 50px;
+              height: auto;
+            }
+            figcaption {
+              width: 100%;
+              text-align: center;
+              margin-top: 5px;
+              font-size: 12px;
+              color: #555;
+            }
+          }
+        }
+      }
+      .horizHobby {
+        border-top: 2px solid #555;
+        border-bottom: 2px solid #555;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        div {
+          position: relative;
+          display: flex;
+          flex-wrap: nowrap;
+          .heart {
+            position: absolute;
+            width: 5%;
+            height: 30px;
+            background-color: #fff;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 30%;
+              animation: purse infinite 0.7s linear;
+              @keyframes purse {
+                0% {
+                  transform: scale(1);
+                }
+                50% {
+                  transform: scale(1.1);
+                }
+                100% {
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+
+          .listMove {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            ul {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 100vw;
+              display: flex;
+              justify-content: space-around;
+              li {
+                font-size: 20px;
+              }
+            }
+            ul:nth-of-type(2) {
+              left: 100%;
+              transform: translate(0%, -50%);
+            }
+            animation: casol infinite 12s linear;
+            @keyframes casol {
+              0% {
+                transform: translateX(0%);
+              }
+              100% {
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+      }
+      .skills {
+        margin-bottom: 100px;
+        > div {
+          margin-top: 50px;
+          h4 {
+            font-size: 25px;
+            margin-bottom: 30px;
+          }
+          .skillUnit {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+              width: 12%;
+
+              border-radius: 10px;
+            }
+            p {
+              width: 70%;
+              font-size: 20px;
+            }
+          }
+          .p {
+            font-size: 20px;
+            margin-bottom: 40px;
+          }
+
+          .ETCSkillUnit {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+
+            img {
+              width: 8%;
+              margin-right: 5%;
+            }
+          }
+        }
+        .etc {
+          p {
+            font-size: 20px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .changeContent {
+        width: 100%;
+        background: linear-gradient(#fff 50%, #000 50%);
+        padding: 200px 0;
+        figure {
+          width: 80%;
+          height: 80vh;
+          background-color: #aaa;
+          margin: 0 auto;
+          img {
+            width: 100%;
+            height: 100%;
+            background-color: #555;
+            width: 100%;
           }
           figcaption {
             width: 100%;
             text-align: center;
-            margin-top: 5px;
-            font-size: 12px;
-            color: #555;
+            margin-top: 20px;
+            color: #fff;
           }
         }
       }
-    }
-    .horizHobby {
-      border-top: 2px solid #555;
-      border-bottom: 2px solid #555;
-      margin-top: 30px;
-      margin-bottom: 100px;
-      div {
+      .awards {
+        background-color: #000;
+        overflow-x: hidden;
         position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        .heart {
-          position: absolute;
-          width: 5%;
-          height: 30px;
-          background-color: #fff;
-          left: 50%;
-          top: 0%;
-          transform: translate(-50%, -50%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            width: 30%;
-            animation: purse infinite 0.7s linear;
-            @keyframes purse {
-              0% {
-                transform: scale(1);
-              }
-              50% {
-                transform: scale(1.1);
-              }
-              100% {
-                transform: scale(1);
-              }
-            }
-          }
-        }
-
-        .listMove {
-          position: relative;
-          height: 100px;
-          width: 100%;
-          ul {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            width: 100vw;
-            display: flex;
-            justify-content: space-around;
-            li {
-              font-size: 20px;
-            }
-          }
-          ul:nth-of-type(2) {
-            left: 100%;
-            transform: translate(0%, -50%);
-          }
-          animation: casol infinite 12s linear;
-          @keyframes casol {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-100%);
-            }
-          }
-        }
-      }
-    }
-    .skills {
-      margin-bottom: 100px;
-      > div {
-        margin-top: 50px;
-        h4 {
-          font-size: 25px;
-          margin-bottom: 30px;
-        }
-        .skillUnit {
-          margin-bottom: 50px;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-
-          img {
-            width: 12%;
-
-            border-radius: 10px;
-          }
-          p {
-            width: 70%;
-            font-size: 20px;
-          }
-        }
-        .p {
-          font-size: 20px;
-          margin-bottom: 40px;
-        }
-
-        .ETCSkillUnit {
-          width: 100%;
-          display: flex;
-          justify-content: start;
-
-          img {
-            width: 8%;
-            margin-right: 5%;
-          }
-        }
-      }
-      .etc {
-        p {
-          font-size: 20px;
-          margin-bottom: 40px;
-        }
-      }
-    }
-    .changeContent {
-      width: 100%;
-      background: linear-gradient(#fff 50%, #000 50%);
-      padding: 200px 0;
-      figure {
-        width: 80%;
-        height: 80vh;
-        background-color: #aaa;
-        margin: 0 auto;
-        img {
-          width: 100%;
-          height: 100%;
-          background-color: #555;
-          width: 100%;
-        }
-        figcaption {
-          width: 100%;
-          text-align: center;
-          margin-top: 20px;
+        width: 100%;
+        padding: 10vh 0;
+        z-index: 2;
+        h2 {
+          margin-left: 14%;
+          margin-bottom: 100px;
           color: #fff;
         }
-      }
-    }
-    .awards {
-      background-color: #000;
-      overflow-x: hidden;
-      position: relative;
-      width: 100%;
-      padding: 10vh 0;
-      z-index: 2;
-      h2 {
-        margin-left: 14%;
-        margin-bottom: 100px;
-        color: #fff;
-      }
-      .eachAward {
-        width: 140%;
-        height: 250px;
-        margin-bottom: 50px;
-        z-index: 2;
-        padding: 0 20%;
-        text-transform: uppercase;
+        .eachAward {
+          width: 140%;
+          height: 250px;
+          margin-bottom: 50px;
+          z-index: 2;
+          padding: 0 20%;
+          text-transform: uppercase;
 
-        .awardDetail {
-          width: 90%;
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          padding: 100px 0;
-          p {
-            margin-right: 100px;
-            color: #000;
-            line-height: 50px;
-            font-size: 50px;
-            font-weight: 500;
-          }
-          p:nth-of-type(2) {
-            font-size: 20px;
-            font-weight: 500;
+          .awardDetail {
+            width: 90%;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 0;
+            p {
+              margin-right: 100px;
+              color: #000;
+              line-height: 50px;
+              font-size: 50px;
+              font-weight: 500;
+            }
+            p:nth-of-type(2) {
+              font-size: 20px;
+              font-weight: 500;
+            }
           }
         }
-      }
-      .eachAward:nth-of-type(1) {
-        background-color: #ffffff;
-      }
-      .eachAward:nth-of-type(2) {
-        background-color: #f93701;
-      }
-      .eachAward:nth-of-type(3) {
-        background-color: #c1c1c1;
-      }
-      .eachAward:nth-of-type(4) {
-        background-color: #ffffff;
+        .eachAward:nth-of-type(1) {
+          background-color: #ffffff;
+        }
+        .eachAward:nth-of-type(2) {
+          background-color: #f93701;
+        }
+        .eachAward:nth-of-type(3) {
+          background-color: #c1c1c1;
+        }
+        .eachAward:nth-of-type(4) {
+          background-color: #ffffff;
+        }
       }
     }
   }
