@@ -142,13 +142,13 @@ body .main .imgList {
   overflow: hidden;
 }
 
-body .main .imgList .move {
+body .main .imgList .moveCenter .move {
   width: 100%;
   position: relative;
   height: 100vh;
 }
 
-body .main .imgList .move li {
+body .main .imgList .moveCenter .move li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
@@ -157,44 +157,44 @@ body .main .imgList .move li {
           filter: brightness(50%);
 }
 
-body .main .imgList .move li img {
+body .main .imgList .moveCenter .move li img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 97%;
   height: auto;
 }
 
-body .main .imgList .move li.active {
+body .main .imgList .moveCenter .move li.active {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
 }
 
-body .main .imgList .move li.active img {
+body .main .imgList .moveCenter .move li.active img {
   width: 100%;
   height: auto;
 }
 
-body .main .imgList .move li:nth-of-type(1) {
+body .main .imgList .moveCenter .move li:nth-of-type(1) {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
 
-body .main .imgList .move li:nth-of-type(2) {
+body .main .imgList .moveCenter .move li:nth-of-type(2) {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
 }
 
-body .main .imgList .move li:nth-of-type(3) {
+body .main .imgList .moveCenter .move li:nth-of-type(3) {
   -webkit-transform: translateX(350%);
           transform: translateX(350%);
 }
 
-body .main .imgList .move li:nth-of-type(4) {
+body .main .imgList .moveCenter .move li:nth-of-type(4) {
   -webkit-transform: translateX(500%);
           transform: translateX(500%);
 }
 
-body .main .imgList .move li:nth-of-type(5) {
+body .main .imgList .moveCenter .move li:nth-of-type(5) {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -233,7 +233,7 @@ body .main .nav p:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media (min-width: 0px) and (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 768px) {
   body .changePlease {
     display: block;
   }
@@ -248,16 +248,19 @@ body .main .nav p:hover {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body .main .list {
     position: absolute;
     z-index: -1;
     height: 420px;
-    width: 900px;
+    width: 768px;
     left: 50%;
     bottom: -50px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  body .main .imgList .move {
+    width: 200%;
   }
 }
 
