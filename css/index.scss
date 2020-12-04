@@ -106,7 +106,6 @@ body {
       width: 100vw;
       overflow: hidden;
       .moveCenter {
-
         .move {
           width: 100%;
           position: relative;
@@ -183,7 +182,7 @@ body {
     }
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767px) {
   body {
     .changePlease {
       display: block;
@@ -210,14 +209,17 @@ body {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .moveCenter{
+  body .main text {
+    font-size: 120px !important;
+  }
+  .moveCenter {
     height: 50%;
     position: inherit;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-75%);
   }
   body .main .imgList .move {
-    width: 200% !important;
+    width: 250% !important;
   }
 }
 @media (min-width: 1025px) and (max-width: 1500px) {

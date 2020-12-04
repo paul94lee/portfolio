@@ -233,7 +233,7 @@ body .main .nav p:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767px) {
   body .changePlease {
     display: block;
   }
@@ -259,15 +259,18 @@ body .main .nav p:hover {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  body .main text {
+    font-size: 120px !important;
+  }
   .moveCenter {
     height: 50%;
     position: inherit;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
   }
   body .main .imgList .move {
-    width: 200% !important;
+    width: 250% !important;
   }
 }
 
