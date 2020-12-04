@@ -238,13 +238,13 @@ body .main .nav p:hover {
     display: block;
   }
   body .intro {
-    display: none;
+    display: block;
   }
   body .main {
-    display: none;
+    display: block;
   }
   body .chanAni {
-    display: none;
+    display: block;
   }
 }
 

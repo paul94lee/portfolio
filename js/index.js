@@ -222,6 +222,12 @@ window.addEventListener('DOMContentLoaded', function () {
             titImg.classList.remove('active');
             x = e.clientX;
         }
+
+
+
+
+
+
         function wheel(e) {
 
             if (scrollBln) {
@@ -279,6 +285,37 @@ window.addEventListener('DOMContentLoaded', function () {
             }
 
         });
+
+        window.addEventListener('touchstart', mouseCalStart);
+        window.addEventListener('touchend', mouseUp);
+        window.addEventListener('touchmove', function (e) {
+
+            dragClick = false;
+
+            if (bln) {
+                target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
+                if (x < e.clientX) {
+                    rightRota();
+                    imgRightRota();
+                }
+                if (x > e.clientX) {
+                    imgleftRota();
+                    leftRota();
+                };
+                x = e.clientX;
+            }
+
+
+
+
+        });
+
+
+
+
+
+
+
         window.addEventListener('wheel', wheel);
 
 
@@ -385,10 +422,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    var imgs=['./img/soodam-cover.jpg','./img/uzen-cover.jpg','./img/liability-cover.jpg'];
-    for(var i=0;i<imgs.length;i++){
-        var creative =document.createElement('img');
+    var imgs = ['./img/soodam-cover.jpg', './img/uzen-cover.jpg', './img/liability-cover.jpg'];
+    for (var i = 0; i < imgs.length; i++) {
+        var creative = document.createElement('img');
 
-        creative.src=imgs[i];
+        creative.src = imgs[i];
     }
 });
