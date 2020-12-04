@@ -106,6 +106,7 @@ body {
       width: 100vw;
       overflow: hidden;
       .moveCenter {
+
         .move {
           width: 100%;
           position: relative;
@@ -188,13 +189,13 @@ body {
       display: block;
     }
     .intro {
-      display: block;
+      display: none;
     }
     .main {
-      display: block;
+      display: none;
     }
     .chanAni {
-      display: block;
+      display: none;
     }
   }
 }
@@ -202,18 +203,24 @@ body {
   body .main .list {
     position: absolute;
     z-index: -1;
-    height: 420px;
-    width: 768px;
+    height: 90vw;
+    width: 150vw;
     left: 50%;
     bottom: -50px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  .moveCenter{
+    height: 50%;
+    position: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   body .main .imgList .move {
-    width: 200%;
+    width: 200% !important;
   }
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   body .main .list {
     position: absolute;
     z-index: -1;
@@ -223,5 +230,8 @@ body {
     bottom: -50px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  body .main .imgList .move {
+    width: 100% !important;
   }
 }
