@@ -289,20 +289,22 @@ window.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('touchstart', mouseCalStart);
         window.addEventListener('touchend', mouseUp);
         window.addEventListener('touchmove', function (e) {
-
             dragClick = false;
-
+            // console.log(e.changedTouches[0].clientX)
             if (bln) {
                 target[2].firstElementChild.setAttribute('fill', '#1f1f1f');
-                if (x < e.clientX) {
+                if (x < e.changedTouches[0].clientX) {
                     rightRota();
                     imgRightRota();
+                    console.log('left')
+
                 }
-                if (x > e.clientX) {
+                if (x > e.changedTouches[0].clientX) {
                     imgleftRota();
                     leftRota();
+                    console.log('right')
                 };
-                x = e.clientX;
+                x = e.changedTouches[0].clientX;
             }
 
 
