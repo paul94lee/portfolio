@@ -264,6 +264,7 @@ body .test .content-wrap {
   z-index: 1;
   width: 100vw;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 body .test .content-wrap > * {

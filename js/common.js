@@ -36,7 +36,6 @@ function goLeft() {
     }, 1000);
 };
 function goRight() {
-    console.log('right')
     var chanAni = document.querySelector('.chanAni');
     chanAni.classList.add('goRight');
     chanAni.classList.remove('base');

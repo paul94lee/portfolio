@@ -248,7 +248,7 @@ body .main .nav p:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   body .main .list {
     position: absolute;
     z-index: -1;
@@ -274,7 +274,23 @@ body .main .nav p:hover {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body .main .list {
+    position: absolute;
+    z-index: -1;
+    height: 60%;
+    width: 100%;
+    left: 50%;
+    bottom: -50px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  body .main .imgList .move {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
   body .main .list {
     position: absolute;
     z-index: -1;

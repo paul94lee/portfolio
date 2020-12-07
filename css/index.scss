@@ -198,31 +198,49 @@ body {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  body .main .list {
-    position: absolute;
-    z-index: -1;
-    height: 60vw;
-    width: 100vw;
-    left: 50%;
-    bottom: -50px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  @media (orientation: portrait) {
+    body .main .list {
+      position: absolute;
+      z-index: -1;
+      height: 60vw;
+      width: 100vw;
+      left: 50%;
+      bottom: -50px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    body .main text {
+      font-size: 120px !important;
+    }
+    .moveCenter {
+      height: 50%;
+      position: inherit;
+      left: 50%;
+      transform: translateX(-75%);
+    }
+    body .main .imgList .move {
+      width: 250% !important;
+    }
   }
-  body .main text {
-    font-size: 120px !important;
-  }
-  .moveCenter {
-    height: 50%;
-    position: inherit;
-    left: 50%;
-    transform: translateX(-75%);
-  }
-  body .main .imgList .move {
-    width: 250% !important;
+  @media (orientation: landscape) {
+    body .main .list {
+      position: absolute;
+      z-index: -1;
+      height: 60%;
+      width: 100%;
+      left: 50%;
+      bottom: -50px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    body .main .imgList .move {
+      width: 100% !important;
+    }
   }
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   body .main .list {
     position: absolute;
     z-index: -1;
