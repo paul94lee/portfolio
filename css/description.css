@@ -136,7 +136,7 @@ body .change .title .tit-wrap .titTxt .txtInner {
 }
 
 body .change .title .tit-wrap .titTxt .txtInner h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #fff;
 }
 
@@ -237,10 +237,11 @@ body .change .content-wrap > div {
 }
 
 body .change .content-wrap > section > h2 {
-  font-family: "Rozha One", serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
   font-size: 7rem;
   margin-bottom: 50px;
-  font-weight: normal;
+  text-transform: capitalize;
 }
 
 body .change .content-wrap > section .deform {

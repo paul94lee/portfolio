@@ -24,7 +24,6 @@ html {
 
 html,
 body {
-
     font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -146,10 +145,29 @@ a {
     html {
         font-size: 7px;
     }
+    body .change .title .tit-wrap .titImg img {
+        width: auto !important;
+    }
+    .deform{
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+
+    }
+    .deform p{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .deform p:nth-of-type(1){
+        margin-bottom: 20px  !important;
+        font-size: 4rem;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 3000px) {
     html {
         font-size: 8px;
     }
+
 }

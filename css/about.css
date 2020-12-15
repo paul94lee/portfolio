@@ -407,7 +407,7 @@ body .test .content-wrap .horizHobby div .listMove ul {
 }
 
 body .test .content-wrap .horizHobby div .listMove ul li {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 body .test .content-wrap .horizHobby div .listMove ul:nth-of-type(2) {
@@ -563,15 +563,15 @@ body .test .content-wrap .awards .eachAward .awardDetail {
 }
 
 body .test .content-wrap .awards .eachAward .awardDetail p {
-  margin-right: 100px;
+  margin-right: 150px;
   color: #000;
   line-height: 50px;
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 500;
 }
 
 body .test .content-wrap .awards .eachAward .awardDetail p:nth-of-type(2) {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 

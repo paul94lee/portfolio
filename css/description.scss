@@ -105,7 +105,7 @@ body {
             top: 50%;
             transform: translate(-50%, -50%);
             h1 {
-              font-family: "Playfair Display", serif;
+              font-family: "Noto Sans KR", sans-serif;
               color: #fff;
             }
             p {
@@ -202,10 +202,11 @@ body {
       > section {
         > h2 {
           // font-family: 'Prata', serif;
-          font-family: "Rozha One", serif;
+          font-family: "Noto Sans KR", sans-serif;
+          font-weight: bold;
           font-size: 7rem;
           margin-bottom: 50px;
-          font-weight: normal;
+          text-transform: capitalize;
         }
         .deform {
           margin-top: 100px;
@@ -217,7 +218,6 @@ body {
           }
           p:nth-of-type(1) {
             font-weight: 700;
-
             width: 30%;
           }
           p:nth-of-type(2) {

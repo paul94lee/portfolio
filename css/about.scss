@@ -304,7 +304,7 @@ body {
               display: flex;
               justify-content: space-around;
               li {
-                font-size: 20px;
+                font-size: 2rem;
               }
             }
             ul:nth-of-type(2) {
@@ -420,14 +420,14 @@ body {
             justify-content: space-between;
             padding: 100px 0;
             p {
-              margin-right: 100px;
+              margin-right: 150px;
               color: #000;
               line-height: 50px;
-              font-size: 50px;
+              font-size: 4rem;
               font-weight: 500;
             }
             p:nth-of-type(2) {
-              font-size: 20px;
+              font-size: 1.5rem;
               font-weight: 500;
             }
           }
